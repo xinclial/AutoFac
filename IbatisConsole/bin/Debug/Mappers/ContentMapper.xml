@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Dao.Mappers.ContentMapper"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="HR_Users" type="Model.HR_User,Model"/>
+  </alias>
+
+  <resultMaps>
+    <resultMap class="HR_Users" id="ContentObject_DefaultResult">
+      <result column="id" property="id" type="int" dbType="int"/>
+      <result column="User_Name" property="User_Name" type="string" dbType="varchar"/>
+      <result column="User_Id" property="User_Id" type="string" dbType="varchar"/>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+
+
+    <select id="QueryAllUser" parameterClass="Hashtable" resultMap="ContentObject_DefaultResult" >
+      <!--<![CDATA[
+        SELECT wfmid,FlowName  FROM dbo.t_Flow_Base 
+      ]]>
+      <iterate prepend="where wfmid in" open="(" close=")" conjunction="," property="wfmids" >
+        <![CDATA[#wfmids[]#]]>
+      </iterate>-->
+
+      <![CDATA[    
+      select *  FROM dbo.HR_User
+      ]]>
+
+      
+
+
+      <!--<dynamic prepend="where">
+        <isParameterPresent>
+          <isNotEmpty prepend="AND" property="RootId">
+            [RootId] = #RootId#
+          </isNotEmpty>
+          
+        </isParameterPresent>
+      </dynamic>
+
+      <iterate prepend=" and wfmid in" open="(" close=")" conjunction="," property="wfmids" >
+        <![CDATA[#wfmids[]#]]>
+      </iterate>-->
+
+    </select>
+  </statements>
+
+
+</sqlMap>

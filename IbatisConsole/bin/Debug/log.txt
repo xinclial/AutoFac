@@ -1,0 +1,18 @@
+[Header]\r\n2017-05-18 17:24:18,512 [15316] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+[Header]\r\n2017-05-18 17:25:27,407 [18740] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+[Header]\r\n2017-05-18 17:27:14,398 [11396] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+[Header]\r\n2017-05-18 17:28:53,265 [17872] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+2017-05-18 17:28:53,356 [17872] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [ContentMapper.xml] to list of watched files.
+[Header]\r\n2017-05-18 17:30:11,183 [14904] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+2017-05-18 17:30:11,273 [14904] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [ContentMapper.xml] to list of watched files.
+2017-05-18 17:30:11,303 [14904] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [IBatis.Mappers.ContentMapper.QueryAllUser] Prepared SQL: [select *  FROM dbo.HR_User]
+[Header]\r\n2017-05-18 17:32:38,566 [14460] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+2017-05-18 17:32:38,651 [14460] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [ContentMapper.xml] to list of watched files.
+2017-05-18 17:32:38,680 [14460] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [IBatis.Mappers.ContentMapper.QueryAllUser] Prepared SQL: [select *  FROM dbo.HR_User]
+[Header]\r\n2017-05-18 17:35:38,084 [8828] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+2017-05-18 17:35:38,171 [8828] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [ContentMapper.xml] to list of watched files.
+2017-05-18 17:35:38,205 [8828] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [Dao.Mappers.ContentMapper.QueryAllUser] Prepared SQL: [select *  FROM dbo.HR_User]
+2017-05-18 17:35:38,215 [8828] DEBUG IBatisNet.DataMapper.Commands.DefaultPreparedCommand [(null)] - Statement Id: [Dao.Mappers.ContentMapper.QueryAllUser] PreparedStatement : [select *  FROM dbo.HR_User]
+2017-05-18 17:35:38,256 [8828] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Open Connection "20876819" to "Microsoft SQL Server, provider V2.0.0.0 in framework .NET V2.0".
+2017-05-18 17:35:38,312 [8828] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Close Connection "20876819" to "Microsoft SQL Server, provider V2.0.0.0 in framework .NET V2.0".
+[Footer]\r\n

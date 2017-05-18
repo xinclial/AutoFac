@@ -1,10 +1,10 @@
 E:\我的项目\FB.CMS\FB.CMS.IService\bin\Debug\FB.CMS.IService.dll
 E:\我的项目\FB.CMS\FB.CMS.IService\bin\Debug\FB.CMS.IService.pdb
-E:\我的项目\FB.CMS\FB.CMS.IService\obj\Debug\FB.CMS.IService.csprojResolveAssemblyReference.cache
-E:\我的项目\FB.CMS\FB.CMS.IService\obj\Debug\FB.CMS.IService.dll
-E:\我的项目\FB.CMS\FB.CMS.IService\obj\Debug\FB.CMS.IService.pdb
 E:\我的项目\FB.CMS\FB.CMS.IService\bin\Debug\FB.CMS.Model.dll
 E:\我的项目\FB.CMS\FB.CMS.IService\bin\Debug\EntityFramework.dll
 E:\我的项目\FB.CMS\FB.CMS.IService\bin\Debug\FB.CMS.Model.pdb
 E:\我的项目\FB.CMS\FB.CMS.IService\bin\Debug\EntityFramework.xml
 E:\我的项目\FB.CMS\FB.CMS.IService\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\我的项目\FB.CMS\FB.CMS.IService\obj\Debug\FB.CMS.IService.csprojResolveAssemblyReference.cache
+E:\我的项目\FB.CMS\FB.CMS.IService\obj\Debug\FB.CMS.IService.dll
+E:\我的项目\FB.CMS\FB.CMS.IService\obj\Debug\FB.CMS.IService.pdb

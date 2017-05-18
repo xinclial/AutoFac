@@ -7,5 +7,6 @@ E:\我的项目\FB.CMS\FB.CMS.Model\bin\Debug\EntityFramework.xml
 E:\我的项目\FB.CMS\FB.CMS.Model\bin\Debug\EntityFramework.SqlServer.xml
 E:\我的项目\FB.CMS\FB.CMS.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
 E:\我的项目\FB.CMS\FB.CMS.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\我的项目\FB.CMS\FB.CMS.Model\obj\Debug\FB.CMS.Model.csprojResolveAssemblyReference.cache
 E:\我的项目\FB.CMS\FB.CMS.Model\obj\Debug\FB.CMS.Model.dll
 E:\我的项目\FB.CMS\FB.CMS.Model\obj\Debug\FB.CMS.Model.pdb
