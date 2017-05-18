@@ -1,0 +1,3149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.Dim_Clients”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Dim_Clients">
+          <Property Name="GUID" Type="varchar" MaxLength="50" />
+          <Property Name="RootId" Type="varchar" MaxLength="100" />
+          <Property Name="ClientType" Type="varchar" MaxLength="50" />
+          <Property Name="ClientName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Serial" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneCountry" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneCity" Type="varchar" MaxLength="50" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="MobilePhone1" Type="varchar" MaxLength="50" />
+          <Property Name="MobilePhone2" Type="varchar" MaxLength="50" />
+          <Property Name="FaxCountry" Type="varchar" MaxLength="50" />
+          <Property Name="FaxCity" Type="varchar" MaxLength="50" />
+          <Property Name="Fax" Type="varchar" MaxLength="50" />
+          <Property Name="Email1" Type="varchar" MaxLength="100" />
+          <Property Name="Email2" Type="varchar" MaxLength="100" />
+          <Property Name="Address" Type="varchar" MaxLength="200" />
+          <Property Name="AddrCode" Type="varchar" MaxLength="50" />
+          <Property Name="Attribute" Type="varchar" MaxLength="50" />
+          <Property Name="AttrRegion" Type="varchar" MaxLength="50" />
+          <Property Name="AttrDetail" Type="varchar" MaxLength="200" />
+          <Property Name="PaperType" Type="varchar" MaxLength="50" />
+          <Property Name="Paper" Type="varchar" MaxLength="50" />
+          <Property Name="HaveProperty" Type="varchar" MaxLength="50" />
+          <Property Name="Intent" Type="varchar" MaxLength="50" />
+          <Property Name="YearInSH" Type="varchar" MaxLength="50" />
+          <Property Name="DealInCenta" Type="varchar" MaxLength="50" />
+          <Property Name="Source" Type="varchar" MaxLength="50" />
+          <Property Name="Media" Type="varchar" MaxLength="50" />
+          <Property Name="BankType" Type="varchar" MaxLength="50" />
+          <Property Name="Bank" Type="varchar" MaxLength="50" />
+          <Property Name="recording_time" Type="datetime" />
+          <Property Name="updated_time" Type="datetime" />
+          <Property Name="CustomerID" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.Fact_Flow_Commision”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Fact_Flow_Commision">
+          <Property Name="RootId" Type="varchar" MaxLength="100" />
+          <Property Name="WfmId" Type="varchar" MaxLength="100" />
+          <Property Name="ReceiptNum" Type="varchar" MaxLength="100" />
+          <Property Name="GPDate" Type="datetime" />
+          <Property Name="Proposer" Type="varchar" MaxLength="50" />
+          <Property Name="ProposerId" Type="varchar" MaxLength="50" />
+          <Property Name="Usage" Type="varchar" MaxLength="100" />
+          <Property Name="PrintAddress" Type="varchar" MaxLength="500" />
+          <Property Name="PrintTime" Type="datetime" />
+          <Property Name="MoneyType" Type="varchar" MaxLength="50" />
+          <Property Name="MoneyAmount" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="ExchangeRate" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="EquealRMB" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="Client" Type="varchar" MaxLength="50" />
+          <Property Name="ClientType" Type="varchar" MaxLength="10" />
+          <Property Name="Bank" Type="varchar" MaxLength="50" />
+          <Property Name="CheckNum" Type="varchar" MaxLength="200" />
+          <Property Name="PayMode" Type="varchar" MaxLength="50" />
+          <Property Name="Reason" Type="varchar(max)" />
+          <Property Name="DisposeReason" Type="varchar" MaxLength="1000" />
+          <Property Name="StateFlag" Type="int" />
+          <Property Name="recording_time" Type="datetime" />
+          <Property Name="BillState" Type="int" />
+          <Property Name="SourceReceiptNum" Type="varchar" MaxLength="100" />
+          <Property Name="BackReason" Type="varchar" MaxLength="1000" />
+          <Property Name="IsFromFirst" Type="int" />
+          <Property Name="isShare" Type="int" />
+          <Property Name="CashPrize" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="CommisionMoney" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="areaDirector" Type="varchar" MaxLength="50" />
+          <Property Name="PosBank" Type="varchar" MaxLength="50" />
+          <Property Name="CompanyNameVAT" Type="varchar" MaxLength="200" />
+          <Property Name="TaxPayerVAT" Type="varchar" MaxLength="200" />
+          <Property Name="AddressVAT" Type="varchar" MaxLength="200" />
+          <Property Name="PhoneVAT" Type="varchar" MaxLength="200" />
+          <Property Name="BankVAT" Type="varchar" MaxLength="200" />
+          <Property Name="AccountVAT" Type="varchar" MaxLength="200" />
+          <Property Name="VATType" Type="varchar" MaxLength="10" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.Fact_flow_distribution”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Fact_flow_distribution">
+          <Property Name="DistributionId" Type="int" />
+          <Property Name="RootId" Type="varchar" MaxLength="100" />
+          <Property Name="WfmId" Type="varchar" MaxLength="100" />
+          <Property Name="OrgName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OrgId" Type="varchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="SerialNum" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserId" Type="varchar" MaxLength="50" />
+          <Property Name="Percent" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="Num" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="Achive" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="Comm" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="StateFlag" Type="int" />
+          <Property Name="recording_time" Type="datetime" />
+          <Property Name="updated_time" Type="nvarchar" MaxLength="50" />
+          <Property Name="AgencyType" Type="varchar" MaxLength="50" />
+          <Property Name="AgencyRole" Type="varchar" MaxLength="50" />
+          <Property Name="CommPercent" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="UserOrgID" Type="nvarchar" MaxLength="50" />
+          <Property Name="OrgDepartmentID" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentUserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentSerialNum" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentOrgName" Type="nvarchar" MaxLength="100" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.Fact_Flow_NonIncomeDetail”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Fact_Flow_NonIncomeDetail">
+          <Property Name="rootid" Type="varchar" MaxLength="50" />
+          <Property Name="wfmid" Type="varchar" MaxLength="50" />
+          <Property Name="CooprateAmount" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="CooprateType" Type="varchar" MaxLength="50" />
+          <Property Name="RealPayout" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="RealPayoutType" Type="varchar" MaxLength="50" />
+          <Property Name="Tax" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="TaxType" Type="varchar" MaxLength="50" />
+          <Property Name="CooprateAmount1" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="CooprateType1" Type="varchar" MaxLength="50" />
+          <Property Name="RealPayout1" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="RealPayoutType1" Type="varchar" MaxLength="50" />
+          <Property Name="Tax1" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="TaxType1" Type="varchar" MaxLength="50" />
+          <Property Name="UComP1" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComName1" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComPName1" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComDuty1" Type="varchar" MaxLength="50" />
+          <Property Name="DBPhone1" Type="varchar" MaxLength="50" />
+          <Property Name="SFZCode1" Type="varchar" MaxLength="50" />
+          <Property Name="PayReason1" Type="nvarchar" MaxLength="500" />
+          <Property Name="CooprateAmount2" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="CooprateType2" Type="varchar" MaxLength="50" />
+          <Property Name="RealPayout2" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="RealPayoutType2" Type="varchar" MaxLength="50" />
+          <Property Name="Tax2" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="TaxType2" Type="varchar" MaxLength="50" />
+          <Property Name="UComP2" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComName2" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComPName2" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComDuty2" Type="varchar" MaxLength="50" />
+          <Property Name="DBPhone2" Type="varchar" MaxLength="50" />
+          <Property Name="SFZCode2" Type="varchar" MaxLength="50" />
+          <Property Name="PayReason2" Type="nvarchar" MaxLength="500" />
+          <Property Name="CooprateAmount3" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="CooprateType3" Type="varchar" MaxLength="50" />
+          <Property Name="RealPayout3" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="RealPayoutType3" Type="varchar" MaxLength="50" />
+          <Property Name="Tax3" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="TaxType3" Type="varchar" MaxLength="50" />
+          <Property Name="UComP3" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComName3" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComPName3" Type="nvarchar" MaxLength="200" />
+          <Property Name="UComDuty3" Type="varchar" MaxLength="50" />
+          <Property Name="DBPhone3" Type="varchar" MaxLength="50" />
+          <Property Name="SFZCode3" Type="varchar" MaxLength="50" />
+          <Property Name="PayReason3" Type="nvarchar" MaxLength="500" />
+          <Property Name="ZJAmount" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="ZJType" Type="varchar" MaxLength="50" />
+          <Property Name="ZJDX" Type="varchar" MaxLength="200" />
+          <Property Name="ZJAmount1" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="ZJType1" Type="varchar" MaxLength="50" />
+          <Property Name="ZJDX1" Type="nvarchar" MaxLength="500" />
+          <Property Name="ZJAmount2" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="ZJType2" Type="varchar" MaxLength="50" />
+          <Property Name="ZJDX2" Type="nvarchar" MaxLength="500" />
+          <Property Name="NonCorpIncome" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="NonCorpIncomeType" Type="varchar" MaxLength="50" />
+          <Property Name="RentStartTime" Type="datetime" />
+          <Property Name="RentEndTime" Type="datetime" />
+          <Property Name="dRecordTime" Type="datetime" />
+          <Property Name="UComCmName1" Type="varchar" MaxLength="200" />
+          <Property Name="UComCmName2" Type="varchar" MaxLength="200" />
+          <Property Name="UComCmName3" Type="varchar" MaxLength="200" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.Fact_flow_trade”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Fact_flow_trade">
+          <Property Name="TradeId" Type="int" />
+          <Property Name="RootId" Type="varchar" MaxLength="100" />
+          <Property Name="WfmId" Type="varchar" MaxLength="100" />
+          <Property Name="TradeType" Type="varchar" MaxLength="50" />
+          <Property Name="Property" Type="varchar" MaxLength="50" />
+          <Property Name="PriceType" Type="varchar" MaxLength="50" />
+          <Property Name="Price" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="GotMoneyType" Type="varchar" MaxLength="50" />
+          <Property Name="GotMoney" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="ContractDate" Type="datetime" />
+          <Property Name="ClientCommType" Type="varchar" MaxLength="50" />
+          <Property Name="ClientComm" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="ClientPreDate" Type="datetime" />
+          <Property Name="HostCommType" Type="varchar" MaxLength="50" />
+          <Property Name="HostComm" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="HostPreDate" Type="datetime" />
+          <Property Name="NonCorpIncomeType" Type="varchar" MaxLength="50" />
+          <Property Name="NonCorpIncome" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="RealPayoutType" Type="varchar" MaxLength="50" />
+          <Property Name="RealPayout" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="CorpIncomeType" Type="varchar" MaxLength="50" />
+          <Property Name="CorpIncome" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="TaxType" Type="varchar" MaxLength="50" />
+          <Property Name="Tax" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="Discount" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="AnJieMoney" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="LawMoney" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="StateFlag" Type="int" />
+          <Property Name="recording_time" Type="datetime" />
+          <Property Name="updated_time" Type="datetime" />
+          <Property Name="OverType" Type="varchar" MaxLength="100" />
+          <Property Name="OverMoneyType" Type="varchar" MaxLength="50" />
+          <Property Name="OverMoney" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="ChangeCause" Type="varchar(max)" />
+          <Property Name="discountCause" Type="varchar(max)" />
+          <Property Name="NonCorpIncomeType2" Type="varchar" MaxLength="50" />
+          <Property Name="NonCorpIncome2" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="RealPayoutType2" Type="varchar" MaxLength="50" />
+          <Property Name="RealPayout2" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="Tax2" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="TaxType2" Type="varchar" MaxLength="50" />
+          <Property Name="NonCorpIncomeType3" Type="varchar" MaxLength="50" />
+          <Property Name="NonCorpIncome3" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="RealPayoutType3" Type="varchar" MaxLength="50" />
+          <Property Name="RealPayout3" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="TaxType3" Type="varchar" MaxLength="50" />
+          <Property Name="Tax3" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="CooprateAmount" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="CooprateType" Type="varchar" MaxLength="50" />
+          <Property Name="ZJAmount" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="ZJType" Type="varchar" MaxLength="50" />
+          <Property Name="cashRule" Type="varchar" MaxLength="200" />
+          <Property Name="cashAmount" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="areaDirector" Type="varchar" MaxLength="50" />
+          <Property Name="ChangeType" Type="varchar" MaxLength="200" />
+          <Property Name="PRootid" Type="varchar" MaxLength="50" />
+          <Property Name="IsNew" Type="int" />
+          <Property Name="ZPriceType" Type="varchar" MaxLength="30" />
+          <Property Name="ZPrice" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="IsLast" Type="int" />
+          <Property Name="IsRpt" Type="int" />
+          <Property Name="IsClear" Type="int" />
+          <Property Name="IsNewHome" Type="int" />
+          <Property Name="ContractType" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.Fact_Main”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Fact_Main">
+          <Property Name="CompanyNum" Type="varchar" MaxLength="100" />
+          <Property Name="PropertyName" Type="varchar" MaxLength="100" />
+          <Property Name="FullAddress" Type="varchar" MaxLength="500" />
+          <Property Name="PropertyType" Type="varchar" MaxLength="50" />
+          <Property Name="sjName" Type="nvarchar" MaxLength="200" />
+          <Property Name="xjName" Type="nvarchar" MaxLength="200" />
+          <Property Name="square" Type="varchar" MaxLength="30" />
+          <Property Name="price" Type="varchar" MaxLength="30" />
+          <Property Name="GotMoney" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="ContractDate" Type="varchar" MaxLength="30" />
+          <Property Name="HostComm" Type="varchar" MaxLength="30" />
+          <Property Name="ClientComm" Type="varchar" MaxLength="30" />
+          <Property Name="WaiYong" Type="numeric" Precision="19" Scale="6" />
+          <Property Name="CorpIncome" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="Discount" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="FinishTime" Type="datetime" />
+          <Property Name="totalComm" Type="varchar" MaxLength="30" />
+          <Property Name="amount" Type="numeric" Precision="38" Scale="4" />
+          <Property Name="Property" Type="varchar" MaxLength="50" />
+          <Property Name="QuYu" Type="varchar" MaxLength="8" />
+          <Property Name="OrgName" Type="nvarchar" MaxLength="100" />
+          <Property Name="year" Type="int" />
+          <Property Name="month" Type="int" />
+        </EntityType>-->
+  <EntityType Name="HR_Base">
+    <Key>
+      <PropertyRef Name="baseId" />
+    </Key>
+    <Property Name="baseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="Duty" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="ParentId" Type="varchar" MaxLength="50" />
+    <Property Name="Path" Type="varchar" MaxLength="1000" />
+    <Property Name="Level" Type="int" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="LatestFlag" Type="int" />
+  </EntityType>
+  <EntityType Name="HR_Department">
+    <Key>
+      <PropertyRef Name="deptId" />
+    </Key>
+    <Property Name="deptId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="SelfCode" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="ParentId" Type="varchar" MaxLength="50" />
+    <Property Name="Path" Type="varchar" MaxLength="1000" />
+    <Property Name="Level" Type="int" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="LatestFlag" Type="int" />
+    <Property Name="Level1" Type="varchar" MaxLength="50" />
+    <Property Name="Level2" Type="varchar" MaxLength="50" />
+    <Property Name="Level3" Type="varchar" MaxLength="50" />
+    <Property Name="Level4" Type="varchar" MaxLength="50" />
+    <Property Name="Level5" Type="varchar" MaxLength="50" />
+    <Property Name="OrgId" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HR_Error">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ctm" Type="int" />
+    <Property Name="k3" Type="int" />
+    <Property Name="agency" Type="int" />
+    <Property Name="comm" Type="int" />
+    <Property Name="type" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="HR_Level">
+    <Key>
+      <PropertyRef Name="lvlId" />
+    </Key>
+    <Property Name="lvlId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CommLevel" Type="int" />
+    <Property Name="NewLevel" Type="int" />
+    <Property Name="LevelName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HR_Org">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Org_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Org_id" Type="varchar" MaxLength="50" />
+    <Property Name="Org_SelfCode" Type="varchar" MaxLength="50" />
+    <Property Name="CTM_OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="Agency_OrgId" Type="varchar" MaxLength="50" />
+    <Property Name="K3_Guid" Type="varchar" MaxLength="50" />
+    <Property Name="Confirmed" Type="bit" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.hr_org_bak”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="hr_org_bak">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Org_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Org_id" Type="varchar" MaxLength="50" />
+    <Property Name="Org_SelfCode" Type="varchar" MaxLength="50" />
+    <Property Name="CTM_OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="Agency_OrgId" Type="varchar" MaxLength="50" />
+    <Property Name="K3_Guid" Type="varchar" MaxLength="50" />
+    <Property Name="Confirmed" Type="bit" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.hr_OrgDepartment”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="hr_OrgDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="drecordtime" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DeptCode" Type="varchar" MaxLength="100" />
+    <Property Name="DeptName" Type="varchar" MaxLength="100" />
+    <Property Name="Addr" Type="varchar" MaxLength="100" />
+    <Property Name="Lv5Name" Type="varchar" MaxLength="100" />
+    <Property Name="Lv5Code" Type="varchar" MaxLength="100" />
+    <Property Name="Lv5Position" Type="varchar" MaxLength="100" />
+    <Property Name="Lv6Name" Type="varchar" MaxLength="100" />
+    <Property Name="Lv6Code" Type="varchar" MaxLength="100" />
+    <Property Name="Lv6Position" Type="varchar" MaxLength="100" />
+    <Property Name="Lv7Name" Type="varchar" MaxLength="100" />
+    <Property Name="Lv7Code" Type="varchar" MaxLength="100" />
+    <Property Name="Lv7Position" Type="varchar" MaxLength="100" />
+    <Property Name="Lv8Name" Type="varchar" MaxLength="100" />
+    <Property Name="Lv8Code" Type="varchar" MaxLength="100" />
+    <Property Name="Lv8Position" Type="varchar" MaxLength="100" />
+    <Property Name="Lv9Name" Type="varchar" MaxLength="100" />
+    <Property Name="Lv9Code" Type="varchar" MaxLength="100" />
+    <Property Name="Lv9Position" Type="varchar" MaxLength="100" />
+    <Property Name="Lv10Name" Type="varchar" MaxLength="100" />
+    <Property Name="Lv10Code" Type="varchar" MaxLength="100" />
+    <Property Name="Lv10Position" Type="varchar" MaxLength="100" />
+    <Property Name="isNew" Type="int" />
+    <Property Name="starttime" Type="datetime" />
+    <Property Name="Endtime" Type="datetime" />
+    <Property Name="isLeave" Type="int" />
+    <Property Name="ischange" Type="nvarchar" MaxLength="30" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Month" Type="int" />
+    <Property Name="drecordtime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Relation">
+    <Key>
+      <PropertyRef Name="relatId" />
+    </Key>
+    <Property Name="relatId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="LatestFlag" Type="int" />
+    <Property Name="baseId" Type="int" />
+    <Property Name="deptId" Type="int" />
+  </EntityType>
+  <EntityType Name="HR_User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_Name" Type="varchar" MaxLength="50" />
+    <Property Name="User_Id" Type="varchar" MaxLength="50" />
+    <Property Name="User_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Agency_UserId" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.hr_userOrg”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="hr_userOrg">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="dRecordTime" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="userCode" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Job" Type="varchar" MaxLength="50" />
+    <Property Name="duty" Type="varchar" MaxLength="50" />
+    <Property Name="level" Type="varchar" MaxLength="50" />
+    <Property Name="orgName" Type="varchar" MaxLength="50" />
+    <Property Name="OrgCode" Type="varchar" MaxLength="50" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="userSel" Type="varchar" MaxLength="50" />
+    <Property Name="isLeave" Type="int" />
+    <Property Name="IsNew" Type="int" />
+    <Property Name="InFlag" Type="varchar" MaxLength="50" />
+    <Property Name="ChangeFlag" Type="varchar" MaxLength="50" />
+    <Property Name="Area" Type="varchar" MaxLength="100" />
+    <Property Name="Year" Type="int" />
+    <Property Name="month" Type="int" />
+    <Property Name="userSel2" Type="varchar" MaxLength="20" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.MisDeptInfo”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="MisDeptInfo">
+          <Property Name="Department" Type="varchar" MaxLength="50" />
+          <Property Name="YjMonth" Type="datetime" />
+          <Property Name="DepartNum" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="SalesNum" Type="numeric" Precision="18" Scale="4" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.OLE DB 目标”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="OLE DB 目标">
+          <Property Name="主流程编号" Type="varchar" MaxLength="100" />
+          <Property Name="流程编号" Type="varchar" MaxLength="100" />
+          <Property Name="创建时间" Type="varchar" MaxLength="8000" />
+          <Property Name="交易类型" Type="varchar" MaxLength="50" />
+          <Property Name="用户编号" Type="varchar" MaxLength="50" />
+          <Property Name="部门编号" Type="int" />
+          <Property Name="用户名称" Type="varchar" MaxLength="50" />
+          <Property Name="编号" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="业绩" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="deptid" Type="int" />
+          <Property Name="deptname" Type="varchar" MaxLength="100" />
+          <Property Name="Branchname" Type="varchar" MaxLength="100" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.ORG_Unit”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ORG_Unit">
+    <Key>
+      <PropertyRef Name="FrameworkID" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" />
+    <Property Name="FrameworkID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CategoryID" Type="tinyint" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="StatusID" Type="tinyint" />
+    <Property Name="OrderCode" Type="nvarchar" MaxLength="200" />
+    <Property Name="SelfCode" Type="nvarchar" MaxLength="200" />
+    <Property Name="UnitLevel" Type="uniqueidentifier" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="800" />
+    <Property Name="K3UnitCode" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.ORG_Unit_20120229”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ORG_Unit_20120229">
+    <Key>
+      <PropertyRef Name="FrameworkID" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" />
+    <Property Name="FrameworkID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CategoryID" Type="tinyint" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="StatusID" Type="tinyint" />
+    <Property Name="OrderCode" Type="nvarchar" MaxLength="200" />
+    <Property Name="SelfCode" Type="nvarchar" MaxLength="200" />
+    <Property Name="UnitLevel" Type="uniqueidentifier" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="800" />
+    <Property Name="K3UnitCode" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.ORG_Unit_bak”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ORG_Unit_bak">
+    <Key>
+      <PropertyRef Name="FrameworkID" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" />
+    <Property Name="FrameworkID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CategoryID" Type="tinyint" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="StatusID" Type="tinyint" />
+    <Property Name="OrderCode" Type="nvarchar" MaxLength="200" />
+    <Property Name="SelfCode" Type="nvarchar" MaxLength="200" />
+    <Property Name="UnitLevel" Type="uniqueidentifier" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="800" />
+    <Property Name="K3UnitCode" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.PropertyCopy”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="PropertyCopy">
+    <Key>
+      <PropertyRef Name="PropertyID" />
+      <PropertyRef Name="CountY" />
+      <PropertyRef Name="TrustDate" />
+      <PropertyRef Name="IsTran" />
+      <PropertyRef Name="FlagFiveYears" />
+      <PropertyRef Name="FlagLookTogether" />
+      <PropertyRef Name="GuidePrice" />
+      <PropertyRef Name="TaxPersonal" />
+      <PropertyRef Name="TaxBusiness" />
+      <PropertyRef Name="TaxLand" />
+      <PropertyRef Name="TaxStampDuty" />
+      <PropertyRef Name="TaxDeed" />
+      <PropertyRef Name="LandTransfer" />
+      <PropertyRef Name="TaxOther" />
+      <PropertyRef Name="FlagRoomList" />
+      <PropertyRef Name="FlagSecond" />
+      <PropertyRef Name="FlagMortgage" />
+      <PropertyRef Name="FlagLimited" />
+      <PropertyRef Name="FlagCarPark" />
+    </Key>
+    <Property Name="PropertyID" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DistrictName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EstateID" Type="varchar" MaxLength="50" />
+    <Property Name="RoomNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Floor" Type="int" />
+    <Property Name="Trade" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountF" Type="varchar" MaxLength="2" />
+    <Property Name="CountT" Type="char" MaxLength="1" />
+    <Property Name="CountW" Type="char" MaxLength="1" />
+    <Property Name="CountY" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FlagRecommand" Type="bit" />
+    <Property Name="PropertyUsage" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertyType" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertyDirection" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertyLook" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertyBuy" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertyCommission" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertySource" Type="nvarchar" MaxLength="50" />
+    <Property Name="Square" Type="float" />
+    <Property Name="PriceUnit" Type="money" />
+    <Property Name="Price" Type="money" />
+    <Property Name="PriceBase" Type="money" />
+    <Property Name="RentPriceUnit" Type="money" />
+    <Property Name="RentPrice" Type="money" />
+    <Property Name="MgtPrice" Type="money" />
+    <Property Name="TrustDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="DeptID" Type="char" MaxLength="32" />
+    <Property Name="EmpID" Type="char" MaxLength="32" />
+    <Property Name="PropertyDecoration" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertyFloor" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="text" />
+    <Property Name="RegPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegDate" Type="datetime" />
+    <Property Name="ModPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModDate" Type="datetime" />
+    <Property Name="FlagPrivate" Type="bit" />
+    <Property Name="PropertyTrust" Type="nvarchar" MaxLength="50" />
+    <Property Name="KeyNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompleteYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompleteMonth" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertyOccupy" Type="nvarchar" MaxLength="50" />
+    <Property Name="PropertyOwn" Type="nvarchar" MaxLength="50" />
+    <Property Name="SquareUse" Type="float" />
+    <Property Name="LastFollowDate" Type="smalldatetime" />
+    <Property Name="FlagTrashed" Type="bit" />
+    <Property Name="FlagDeleted" Type="bit" />
+    <Property Name="OwnerName" Type="varchar" MaxLength="5000" />
+    <Property Name="OwnerTel" Type="varchar" MaxLength="5000" />
+    <Property Name="ContactName" Type="varchar" MaxLength="50" />
+    <Property Name="PropertyFurniture" Type="varchar" MaxLength="50" />
+    <Property Name="FlagSpecial" Type="bit" />
+    <Property Name="PropertyNo" Type="varchar" MaxLength="50" />
+    <Property Name="PriceLine" Type="float" />
+    <Property Name="RentPriceLine" Type="float" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="PropertyCertificate" Type="varchar" MaxLength="50" />
+    <Property Name="PropertyElectric" Type="varchar" MaxLength="50" />
+    <Property Name="ExDate" Type="datetime" />
+    <Property Name="FloorAll" Type="int" />
+    <Property Name="HandOverDate" Type="datetime" />
+    <Property Name="UnitName" Type="varchar" MaxLength="10" />
+    <Property Name="RentUnitName" Type="varchar" MaxLength="10" />
+    <Property Name="PhotoCount" Type="int" />
+    <Property Name="CustomField1" Type="varchar" MaxLength="50" />
+    <Property Name="CustomField2" Type="varchar" MaxLength="50" />
+    <Property Name="IsTran" Type="bit" Nullable="false" />
+    <Property Name="TrustNo" Type="varchar" MaxLength="50" />
+    <Property Name="TrustExpired" Type="datetime" />
+    <Property Name="TrustRemark" Type="varchar" MaxLength="200" />
+    <Property Name="TrustDeptID" Type="varchar" MaxLength="36" />
+    <Property Name="TrustEmpID" Type="varchar" MaxLength="36" />
+    <Property Name="RecommandExpired" Type="datetime" />
+    <Property Name="OwnerJob" Type="varchar" MaxLength="50" />
+    <Property Name="OwnerSex" Type="varchar" MaxLength="8" />
+    <Property Name="OwnerAge" Type="varchar" MaxLength="10" />
+    <Property Name="OwnerIncome" Type="varchar" MaxLength="50" />
+    <Property Name="CentaDBID" Type="varchar" MaxLength="50" />
+    <Property Name="CustNumeric1" Type="float" />
+    <Property Name="CustNumeric2" Type="float" />
+    <Property Name="CustNumeric3" Type="float" />
+    <Property Name="CustDate1" Type="datetime" />
+    <Property Name="CustDate2" Type="datetime" />
+    <Property Name="CustDate3" Type="datetime" />
+    <Property Name="CustString1" Type="varchar" MaxLength="100" />
+    <Property Name="CustString2" Type="varchar" MaxLength="100" />
+    <Property Name="CustString3" Type="varchar" MaxLength="100" />
+    <Property Name="PropertyCardNo" Type="varchar" MaxLength="30" />
+    <Property Name="PropertyMan" Type="varchar" MaxLength="22" />
+    <Property Name="PropertyCardDate" Type="datetime" />
+    <Property Name="FlagFiveYears" Type="int" Nullable="false" />
+    <Property Name="EmpIDRecommandAreaManager" Type="varchar" MaxLength="50" />
+    <Property Name="PropertyCardAddress" Type="varchar" MaxLength="120" />
+    <Property Name="PropertyCardOther" Type="varchar" MaxLength="10" />
+    <Property Name="PropertyCardType" Type="varchar" MaxLength="10" />
+    <Property Name="PropertyLevel" Type="varchar" MaxLength="20" />
+    <Property Name="FlagLookTogether" Type="int" Nullable="false" />
+    <Property Name="LookTogetherEmpID" Type="varchar" MaxLength="40" />
+    <Property Name="GuidePrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TaxPersonal" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TaxBusiness" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TaxLand" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TaxStampDuty" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TaxDeed" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="LandTransfer" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TaxOther" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CommissionAlloc" Type="nvarchar" MaxLength="300" />
+    <Property Name="RoomTypeID" Type="nvarchar" MaxLength="40" />
+    <Property Name="FlagRoomList" Type="int" Nullable="false" />
+    <Property Name="FlagSecond" Type="bit" Nullable="false" />
+    <Property Name="FlagMortgage" Type="bit" Nullable="false" />
+    <Property Name="FlagLimited" Type="bit" Nullable="false" />
+    <Property Name="ExpiredDateLimited" Type="datetime" />
+    <Property Name="LimitedEmpID" Type="nvarchar" MaxLength="40" />
+    <Property Name="FlagCarPark" Type="int" Nullable="false" />
+    <Property Name="CarPos" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.SYSConfig”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="SYSConfig">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrgRole" Type="varchar" MaxLength="50" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="FlowType" Type="varchar" MaxLength="50" />
+    <Property Name="AttachmentUpLoad" Type="int" />
+    <Property Name="AttachmentBrower" Type="int" />
+    <Property Name="AttachmentList" Type="int" />
+    <Property Name="ZPriceView" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="T_Case">
+    <Key>
+      <PropertyRef Name="RootID" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ctm_code" Type="varchar" MaxLength="100" />
+    <Property Name="agent_username" Type="nvarchar" MaxLength="100" />
+    <Property Name="agent_realname" Type="nvarchar" MaxLength="100" />
+    <Property Name="agent_mobile" Type="varchar" MaxLength="100" />
+    <Property Name="grp_code" Type="varchar" MaxLength="100" />
+    <Property Name="grp_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="grp_mgr_username" Type="nvarchar" MaxLength="100" />
+    <Property Name="grp_mgr_realname" Type="nvarchar" MaxLength="100" />
+    <Property Name="grp_mgr_mobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="ar_code" Type="varchar" MaxLength="100" />
+    <Property Name="ar_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="ar_mgr_username" Type="nvarchar" MaxLength="100" />
+    <Property Name="ar_mgr_realname" Type="nvarchar" MaxLength="100" />
+    <Property Name="ar_mgr_mobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="wz_direct_username" Type="nvarchar" MaxLength="100" />
+    <Property Name="wz_direct_realname" Type="varchar" MaxLength="100" />
+    <Property Name="property_address" Type="nvarchar" MaxLength="500" />
+    <Property Name="property_id" Type="nvarchar" MaxLength="500" />
+    <Property Name="del_code" Type="nvarchar" MaxLength="500" />
+    <Property Name="consult_username" Type="nvarchar" MaxLength="500" />
+    <Property Name="consult_realname" Type="nvarchar" MaxLength="500" />
+    <Property Name="create_time" Type="datetime" Nullable="false" />
+    <Property Name="update_time" Type="datetime" Nullable="false" />
+    <Property Name="partner" Type="varchar" MaxLength="5000" />
+  </EntityType>
+  <EntityType Name="t_Case_Clients">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ClientType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClientName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Serial" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneCountry" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneCity" Type="varchar" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="MobilePhone1" Type="varchar" MaxLength="50" />
+    <Property Name="MobilePhone2" Type="varchar" MaxLength="50" />
+    <Property Name="FaxCountry" Type="varchar" MaxLength="50" />
+    <Property Name="FaxCity" Type="varchar" MaxLength="50" />
+    <Property Name="Fax" Type="varchar" MaxLength="50" />
+    <Property Name="Email1" Type="varchar" MaxLength="100" />
+    <Property Name="Email2" Type="varchar" MaxLength="100" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="AddrCode" Type="varchar" MaxLength="50" />
+    <Property Name="Attribute" Type="varchar" MaxLength="50" />
+    <Property Name="AttrRegion" Type="varchar" MaxLength="50" />
+    <Property Name="AttrDetail" Type="varchar" MaxLength="200" />
+    <Property Name="PaperType" Type="varchar" MaxLength="50" />
+    <Property Name="Paper" Type="varchar" MaxLength="50" />
+    <Property Name="HaveProperty" Type="varchar" MaxLength="50" />
+    <Property Name="Intent" Type="varchar" MaxLength="50" />
+    <Property Name="YearInSH" Type="varchar" MaxLength="50" />
+    <Property Name="DealInCenta" Type="varchar" MaxLength="50" />
+    <Property Name="Source" Type="varchar" MaxLength="50" />
+    <Property Name="Media" Type="varchar" MaxLength="50" />
+    <Property Name="BankType" Type="varchar" MaxLength="50" />
+    <Property Name="Bank" Type="varchar" MaxLength="50" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="datetime" />
+    <Property Name="CustomerID" Type="varchar" MaxLength="50" />
+    <Property Name="TurnOverTime" Type="varchar" MaxLength="50" />
+    <Property Name="cust_position" Type="varchar" MaxLength="50" />
+    <Property Name="AttrDetailOther" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_Case_CommissionDateLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OldCommissionDate" Type="datetime" Nullable="false" />
+    <Property Name="NewCommissionDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifyUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t_Case_Main">
+    <Key>
+      <PropertyRef Name="RootId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CompanyNum" Type="varchar" MaxLength="100" />
+    <Property Name="BranchNum" Type="varchar" MaxLength="100" />
+    <Property Name="CaseNum" Type="varchar" MaxLength="100" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="SerialNum" Type="varchar" MaxLength="50" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="FullAddress" Type="varchar" MaxLength="500" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="ChangeDate" Type="datetime" />
+    <Property Name="FinishDate" Type="datetime" />
+    <Property Name="CaseFlag" Type="int" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="datetime" />
+    <Property Name="PropertyName" Type="varchar" MaxLength="100" />
+    <Property Name="OrgId" Type="varchar" MaxLength="20" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="CommissionDate" Type="datetime" />
+    <Property Name="RecordNum" Type="varchar" MaxLength="100" />
+    <Property Name="NewProperty" Type="varchar" MaxLength="50" />
+    <Property Name="NewAnJieMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="NPDateTime" Type="datetime" />
+    <Property Name="IsFromFirst" Type="int" Nullable="false" />
+    <Property Name="isGSP" Type="int" />
+    <Property Name="ExchangeType" Type="varchar" MaxLength="50" />
+    <Property Name="IsNewHome" Type="int" />
+    <Property Name="MainUser_Name" Type="varchar" MaxLength="100" />
+    <Property Name="MainUser_ID" Type="varchar" MaxLength="100" />
+    <Property Name="MainUser_Code" Type="varchar" MaxLength="100" />
+    <Property Name="MainOrg_Name" Type="varchar" MaxLength="100" />
+    <Property Name="MainOrg_ID" Type="varchar" MaxLength="100" />
+    <Property Name="MainOrg_Code" Type="varchar" MaxLength="100" />
+    <Property Name="SourceFlag" Type="varchar" MaxLength="50" />
+    <Property Name="Delegation_Code" Type="varchar" MaxLength="100" />
+    <Property Name="IsSpecialCase" Type="varchar" MaxLength="10" />
+    <Property Name="OrgIdA" Type="varchar" MaxLength="100" />
+    <Property Name="EarnestDate" Type="datetime" />
+    <Property Name="ContractDate" Type="datetime" />
+    <Property Name="BUSISH_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIAR_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSISWZ_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIWZ_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIBA_ID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_Case_Property">
+    <Key>
+      <PropertyRef Name="RootId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PropertyName" Type="varchar" MaxLength="100" />
+    <Property Name="FullAddress" Type="varchar" MaxLength="500" />
+    <Property Name="Serial" Type="varchar" MaxLength="100" />
+    <Property Name="Block" Type="varchar" MaxLength="100" />
+    <Property Name="Road" Type="varchar" MaxLength="500" />
+    <Property Name="Lane" Type="varchar" MaxLength="500" />
+    <Property Name="Number" Type="varchar" MaxLength="500" />
+    <Property Name="Room" Type="nvarchar" MaxLength="500" />
+    <Property Name="PropertyType" Type="varchar" MaxLength="50" />
+    <Property Name="Square" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="SquareType" Type="varchar" MaxLength="50" />
+    <Property Name="House" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="Hall" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="Toilet" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="HouseKeeper" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="SouthHouse" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="SouthHall" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="ViewHall" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="HouseLevel" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="Step" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="Home" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="Model" Type="varchar" MaxLength="50" />
+    <Property Name="HouseAge" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="Fitment" Type="varchar" MaxLength="50" />
+    <Property Name="Furniture" Type="varchar" MaxLength="50" />
+    <Property Name="FitmentYear" Type="numeric" Precision="10" Scale="1" />
+    <Property Name="QuietLevel" Type="varchar" MaxLength="50" />
+    <Property Name="Car" Type="varchar" MaxLength="50" />
+    <Property Name="updated_time" Type="datetime" />
+    <Property Name="PropertyId" Type="varchar" MaxLength="100" />
+    <Property Name="Area" Type="varchar" MaxLength="50" />
+    <Property Name="DistrictName" Type="varchar" MaxLength="10" />
+    <Property Name="EstateID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Spell" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="AgencyPropertyName" Type="varchar" MaxLength="100" />
+    <Property Name="SourceFlag" Type="varchar" MaxLength="50" />
+    <Property Name="AgencyID" Type="varchar" MaxLength="100" />
+    <Property Name="Delegation_Code" Type="varchar" MaxLength="100" />
+    <Property Name="propertyTypeOther" Type="varchar" MaxLength="100" />
+    <Property Name="Kitchen" Type="int" />
+    <Property Name="CQAddress" Type="varchar" MaxLength="500" />
+    <Property Name="EstateSortOth" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="T_Case_StartRemit">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RemitRootID" Type="varchar" MaxLength="50" />
+    <Property Name="RemitCaseNum" Type="varchar" MaxLength="50" />
+    <Property Name="RemitSalerID" Type="varchar" MaxLength="50" />
+    <Property Name="RemitSalerName" Type="varchar" MaxLength="50" />
+    <Property Name="StateFlag" Type="int" Nullable="false" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.T_CaseClient”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="T_CaseClient">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RootID" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ctm_code" Type="varchar" MaxLength="20" />
+    <Property Name="cust_code" Type="nvarchar" MaxLength="100" />
+    <Property Name="cust_position" Type="nvarchar" MaxLength="100" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="cert_type" Type="nvarchar" MaxLength="100" />
+    <Property Name="cert_code" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.T_CommissionCurrentResult”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="T_CommissionCurrentResult">
+          <Property Name="CurrentMonth" Type="int" />
+          <Property Name="CurrentYear" Type="int" />
+          <Property Name="RootId" Type="varchar" MaxLength="30" />
+          <Property Name="WfmId" Type="varchar" MaxLength="30" />
+          <Property Name="ClientType" Type="varchar" MaxLength="30" />
+          <Property Name="ClientName" Type="varchar" MaxLength="100" />
+          <Property Name="PredictStage" Type="varchar" MaxLength="30" />
+          <Property Name="PredictDate" Type="datetime" />
+          <Property Name="PredictAmount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Received" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Unreceived" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="FlowLogId" Type="uniqueidentifier" />
+          <Property Name="IsFlow" Type="bit" />
+          <Property Name="ClearStatus" Type="tinyint" />
+          <Property Name="StageIndex" Type="tinyint" />
+          <Property Name="CheckTime" Type="datetime" />
+          <Property Name="RecordTime" Type="datetime" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.T_CommissionHisResult”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="T_CommissionHisResult">
+          <Property Name="CurrentMonth" Type="int" />
+          <Property Name="CurrentYear" Type="int" />
+          <Property Name="RootId" Type="varchar" MaxLength="30" />
+          <Property Name="WfmId" Type="varchar" MaxLength="30" />
+          <Property Name="ClientType" Type="varchar" MaxLength="30" />
+          <Property Name="ClientName" Type="varchar" MaxLength="100" />
+          <Property Name="PredictStage" Type="varchar" MaxLength="30" />
+          <Property Name="PredictDate" Type="datetime" />
+          <Property Name="PredictAmount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Received" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Unreceived" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CurrentMonthReceived" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CurrentMonthUnreceived" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CurrentMonthClearReceived" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="DelayTime" Type="datetime" />
+          <Property Name="DelayFlowName" Type="varchar" MaxLength="30" />
+          <Property Name="DelayStage" Type="varchar" MaxLength="30" />
+          <Property Name="DelayDate" Type="datetime" />
+          <Property Name="DelayUnreceived" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="DelayMark" Type="nvarchar(max)" />
+          <Property Name="SusongDate" Type="datetime" />
+          <Property Name="FlowLogId" Type="uniqueidentifier" />
+          <Property Name="IsDelay" Type="bit" />
+          <Property Name="IsFlow" Type="bit" />
+          <Property Name="IsSusong" Type="bit" />
+          <Property Name="ClearStatus" Type="tinyint" />
+          <Property Name="IsBadDebet" Type="bit" />
+          <Property Name="StageIndex" Type="tinyint" />
+          <Property Name="RecordTime" Type="datetime" />
+          <Property Name="BaoShuDate" Type="datetime" />
+        </EntityType>-->
+  <EntityType Name="T_DDL_ItemList">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemName" Type="varchar" MaxLength="50" />
+    <Property Name="ParentID" Type="bigint" />
+    <Property Name="ItemType" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="500" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+    <Property Name="IsFillTable" Type="int" />
+  </EntityType>
+  <EntityType Name="T_DelayCommForGsl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DelayID" Type="int" Nullable="false" />
+    <Property Name="rootid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="20" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="ClientType" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="ColumnName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_DirectorManagerAccount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManagerUser" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerUserCode" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerUserID" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerSecretaryUser" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerSecretaryUserCode" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerSecretaryUserID" Type="varchar" MaxLength="50" />
+    <Property Name="ParentID" Type="varchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+    <Property Name="ParentUserName" Type="varchar" MaxLength="50" />
+    <Property Name="ParentUserCode" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_EditNum_Log">
+    <Key>
+      <PropertyRef Name="editId" />
+    </Key>
+    <Property Name="editId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Num" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Entrust">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Prootid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EntrustID" Type="varchar" MaxLength="50" />
+    <Property Name="Crootid" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyNum" Type="varchar" MaxLength="50" />
+    <Property Name="FullAddress" Type="varchar" MaxLength="500" />
+    <Property Name="PropertyID" Type="varchar" MaxLength="100" />
+    <Property Name="Square" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Floor" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TradeTypePro" Type="varchar" MaxLength="50" />
+    <Property Name="EstateName" Type="varchar" MaxLength="500" />
+    <Property Name="EstateID" Type="varchar" MaxLength="100" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+    <Property Name="isclear" Type="int" />
+    <Property Name="isLock" Type="int" />
+    <Property Name="LockReason" Type="varchar(max)" />
+    <Property Name="ClearTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_EntrustAccount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccUser" Type="varchar" MaxLength="50" />
+    <Property Name="AccUserCode" Type="varchar" MaxLength="50" />
+    <Property Name="AccUserID" Type="varchar" MaxLength="50" />
+    <Property Name="Account" Type="varchar" MaxLength="100" />
+    <Property Name="AmountMax" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="AmountAvailable" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="AmountLimit" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ParentID" Type="varchar" MaxLength="50" />
+    <Property Name="IsWast" Type="int" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.T_EntrustFinance”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="T_EntrustFinance">
+          <Property Name="EntrustID" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Operator" Type="nvarchar" MaxLength="50" />
+          <Property Name="OperateTime" Type="datetime" />
+          <Property Name="ImPortYear" Type="int" />
+          <Property Name="ImPortMonth" Type="int" />
+          <Property Name="Salary" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Commission" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Invoice" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Refund" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Remarks" Type="varchar(max)" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.T_EntrustFinanceImportLog”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="T_EntrustFinanceImportLog">
+          <Property Name="EntrustID" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="AmountType" Type="tinyint" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Operator" Type="nvarchar" MaxLength="50" />
+          <Property Name="OperateTime" Type="datetime" />
+          <Property Name="ImPortYear" Type="int" />
+          <Property Name="ImPortMonth" Type="int" />
+          <Property Name="Salary" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Commission" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Invoice" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Refund" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Remarks" Type="varchar(max)" />
+        </EntityType>-->
+  <EntityType Name="T_EntrustFlow">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Prootid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FlowName" Type="varchar" MaxLength="50" />
+    <Property Name="FlowID" Type="bigint" />
+    <Property Name="TradeType" Type="varchar" MaxLength="50" />
+    <Property Name="IsSign" Type="int" />
+    <Property Name="EntrustStart" Type="datetime" />
+    <Property Name="EntrustEnd" Type="datetime" />
+    <Property Name="Price1" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Price2" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CommAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CommRate" Type="numeric" Precision="18" Scale="8" />
+    <Property Name="EntrustDate" Type="datetime" />
+    <Property Name="EntrustType" Type="varchar" MaxLength="50" />
+    <Property Name="IsPayOwn" Type="int" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="UserCode" Type="varchar" MaxLength="50" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="OrgID" Type="bigint" />
+    <Property Name="ApplyUser" Type="varchar" MaxLength="50" />
+    <Property Name="ApplyID" Type="varchar" MaxLength="50" />
+    <Property Name="ApplyCode" Type="varchar" MaxLength="50" />
+    <Property Name="QDIdeaType" Type="varchar" MaxLength="50" />
+    <Property Name="QDIdea" Type="varchar" MaxLength="500" />
+    <Property Name="QDArea" Type="varchar" MaxLength="50" />
+    <Property Name="QDid" Type="varchar" MaxLength="50" />
+    <Property Name="QDName" Type="varchar" MaxLength="50" />
+    <Property Name="QDCode" Type="varchar" MaxLength="50" />
+    <Property Name="payTime" Type="datetime" />
+    <Property Name="payAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="payFor" Type="varchar" MaxLength="50" />
+    <Property Name="payRemark" Type="varchar" MaxLength="500" />
+    <Property Name="ReasonGR" Type="nvarchar" MaxLength="500" />
+    <Property Name="ReasonGS" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsNoInterAgency" Type="int" />
+    <Property Name="CurState" Type="varchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="IsNew" Type="int" />
+    <Property Name="IsWast" Type="int" />
+    <Property Name="dRecordTime" Type="datetime" />
+    <Property Name="CQUser" Type="varchar" MaxLength="50" />
+    <Property Name="QSUser" Type="varchar" MaxLength="50" />
+    <Property Name="QSContact" Type="varchar" MaxLength="50" />
+    <Property Name="Prox" Type="varchar" MaxLength="50" />
+    <Property Name="ProxContact" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="200" />
+    <Property Name="PayerReceiver" Type="varchar" MaxLength="50" />
+    <Property Name="PayerReceiverID" Type="varchar" MaxLength="50" />
+    <Property Name="PayerReceiverCode" Type="varchar" MaxLength="50" />
+    <Property Name="Bank" Type="varchar" MaxLength="50" />
+    <Property Name="CardNo" Type="varchar" MaxLength="50" />
+    <Property Name="AreaDirectorName" Type="varchar" MaxLength="50" />
+    <Property Name="AreaDirectorID" Type="varchar" MaxLength="50" />
+    <Property Name="AreaDirectorCode" Type="varchar" MaxLength="50" />
+    <Property Name="DelegationAgreementID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.T_EntrustFlowBK”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="T_EntrustFlowBK">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Prootid" />
+      <PropertyRef Name="wfmid" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="Prootid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FlowName" Type="varchar" MaxLength="50" />
+    <Property Name="FlowID" Type="bigint" />
+    <Property Name="TradeType" Type="varchar" MaxLength="50" />
+    <Property Name="IsSign" Type="int" />
+    <Property Name="EntrustStart" Type="datetime" />
+    <Property Name="EntrustEnd" Type="datetime" />
+    <Property Name="Price1" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Price2" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CommAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CommRate" Type="numeric" Precision="18" Scale="8" />
+    <Property Name="EntrustDate" Type="datetime" />
+    <Property Name="EntrustType" Type="varchar" MaxLength="50" />
+    <Property Name="IsPayOwn" Type="int" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="UserCode" Type="varchar" MaxLength="50" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="OrgID" Type="bigint" />
+    <Property Name="ApplyUser" Type="varchar" MaxLength="50" />
+    <Property Name="ApplyID" Type="varchar" MaxLength="50" />
+    <Property Name="ApplyCode" Type="varchar" MaxLength="50" />
+    <Property Name="QDIdeaType" Type="varchar" MaxLength="50" />
+    <Property Name="QDIdea" Type="varchar" MaxLength="500" />
+    <Property Name="QDArea" Type="varchar" MaxLength="50" />
+    <Property Name="QDid" Type="varchar" MaxLength="50" />
+    <Property Name="QDName" Type="varchar" MaxLength="50" />
+    <Property Name="QDCode" Type="varchar" MaxLength="50" />
+    <Property Name="payTime" Type="datetime" />
+    <Property Name="payAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="payFor" Type="varchar" MaxLength="50" />
+    <Property Name="payRemark" Type="varchar" MaxLength="500" />
+    <Property Name="ReasonGR" Type="nvarchar" MaxLength="500" />
+    <Property Name="ReasonGS" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsNoInterAgency" Type="int" />
+    <Property Name="CurState" Type="varchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="IsNew" Type="int" />
+    <Property Name="IsWast" Type="int" />
+    <Property Name="dRecordTime" Type="datetime" />
+    <Property Name="CQUser" Type="varchar" MaxLength="50" />
+    <Property Name="QSUser" Type="varchar" MaxLength="50" />
+    <Property Name="QSContact" Type="varchar" MaxLength="50" />
+    <Property Name="Prox" Type="varchar" MaxLength="50" />
+    <Property Name="ProxContact" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_EntrustGartherPay">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Prootid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FlowName" Type="varchar" MaxLength="50" />
+    <Property Name="FlowID" Type="bigint" />
+    <Property Name="PayType" Type="varchar" MaxLength="50" />
+    <Property Name="PayNum" Type="varchar" MaxLength="50" />
+    <Property Name="PayAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="PayTime" Type="datetime" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" />
+    <Property Name="PayUser" Type="varchar" MaxLength="50" />
+    <Property Name="PayUserCode" Type="varchar" MaxLength="50" />
+    <Property Name="PayUserID" Type="varchar" MaxLength="50" />
+    <Property Name="UserRole" Type="varchar" MaxLength="50" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="OrgId" Type="bigint" />
+    <Property Name="AccUserID" Type="varchar" MaxLength="50" />
+    <Property Name="PayReason" Type="varchar" MaxLength="500" />
+    <Property Name="IsWast" Type="bigint" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_EntrustHoldComm">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Prootid" Type="varchar" MaxLength="50" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" />
+    <Property Name="User" Type="varchar" MaxLength="50" />
+    <Property Name="UserCode" Type="varchar" MaxLength="50" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="HoldComm" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="HoldCommed" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="NextHoldComm" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="year" Type="int" />
+    <Property Name="month" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_EntrustResult">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Prootid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Wfmid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FlowName" Type="varchar" MaxLength="50" />
+    <Property Name="FlowID" Type="bigint" />
+    <Property Name="Result" Type="varchar" MaxLength="50" />
+    <Property Name="EntrustLog" Type="varchar" MaxLength="500" />
+    <Property Name="Crootid" Type="varchar" MaxLength="50" />
+    <Property Name="CFlowName" Type="varchar" MaxLength="50" />
+    <Property Name="Cwfmid" Type="varchar" MaxLength="50" />
+    <Property Name="IsOver" Type="int" />
+    <Property Name="OverTime" Type="datetime" />
+    <Property Name="IsNew" Type="int" />
+    <Property Name="IsWast" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" />
+    <Property Name="HSTime" Type="datetime" />
+    <Property Name="HSAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ResultAmount" Type="numeric" Precision="18" Scale="4" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.T_EntrustSpecialUser”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="T_EntrustSpecialUser">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="UserCode" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="UserType" />
+      <PropertyRef Name="IsWaster" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Bank" Type="varchar" MaxLength="50" />
+    <Property Name="CardNo" Type="varchar" MaxLength="50" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsWaster" Type="bigint" Nullable="false" />
+    <Property Name="CardAccount" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.T_EntrustUser”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="T_EntrustUser">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Prootid" />
+      <PropertyRef Name="wfmid" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Prootid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="UserCode" Type="varchar" MaxLength="50" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="OrgID" Type="bigint" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" />
+    <Property Name="Amount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="UserParent" Type="varchar" MaxLength="500" />
+    <Property Name="UserRole" Type="varchar" MaxLength="50" />
+    <Property Name="IsLeave" Type="int" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" />
+    <Property Name="Rank" Type="int" />
+  </EntityType>
+  <EntityType Name="t_Flow_Base">
+    <Key>
+      <PropertyRef Name="WfmId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="100" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FlowName" Type="varchar" MaxLength="50" />
+    <Property Name="FlowTime" Type="datetime" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="SerialNum" Type="varchar" MaxLength="50" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CreateUser" Type="varchar" MaxLength="100" />
+    <Property Name="FirstStepTime" Type="datetime" />
+    <Property Name="AuditedTime" Type="datetime" />
+    <Property Name="OutDeptTime" Type="datetime" />
+    <Property Name="BalanceUseTime" Type="datetime" />
+    <Property Name="CWFirstTime" Type="datetime" />
+    <Property Name="CWSecondTime" Type="datetime" />
+    <Property Name="FWFirstTime" Type="datetime" />
+    <Property Name="FWSecondTime" Type="datetime" />
+    <Property Name="FinishTime" Type="datetime" />
+    <Property Name="BalanceTime" Type="datetime" />
+    <Property Name="FlowFlag" Type="int" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="datetime" />
+    <Property Name="OrgId" Type="varchar" MaxLength="100" />
+    <Property Name="FinishUserId" Type="varchar" MaxLength="50" />
+    <Property Name="FinishUserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="FinishIdea" Type="varchar" MaxLength="500" />
+    <Property Name="CWFirstUserId" Type="varchar" MaxLength="50" />
+    <Property Name="CWSecondUserId" Type="varchar" MaxLength="50" />
+    <Property Name="FWFirstUserId" Type="varchar" MaxLength="50" />
+    <Property Name="FWSecondUserId" Type="varchar" MaxLength="50" />
+    <Property Name="FlowId" Type="int" />
+    <Property Name="NewAgencyPushFlag" Type="int" />
+    <Property Name="IsYCFlowFlag" Type="int" />
+    <Property Name="CurstatusName" Type="varchar" MaxLength="100" />
+    <Property Name="CurstatusID" Type="varchar" MaxLength="100" />
+    <Property Name="IsSpecialCase" Type="int" />
+    <Property Name="ProcessKey" Type="varchar" MaxLength="100" />
+    <Property Name="CreateUserName" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="t_Flow_CaseOver">
+    <Key>
+      <PropertyRef Name="RootId" />
+      <PropertyRef Name="WfmId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OwnerChangeDate" Type="datetime" />
+    <Property Name="DealAnjie" Type="varchar" MaxLength="50" />
+    <Property Name="HouseGivenDate" Type="datetime" />
+    <Property Name="PaperChangeDate" Type="datetime" />
+    <Property Name="LoanType" Type="varchar" MaxLength="50" />
+    <Property Name="LoanDate" Type="datetime" />
+    <Property Name="Comment" Type="varchar" MaxLength="500" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="datetime" />
+    <Property Name="EndCaseType" Type="varchar" MaxLength="500" />
+    <Property Name="YCGH" Type="varchar" MaxLength="500" />
+    <Property Name="IsDealAnjie" Type="varchar" MaxLength="50" />
+    <Property Name="DealAnjieCode" Type="varchar" MaxLength="50" />
+    <Property Name="DealAnjieID" Type="varchar" MaxLength="50" />
+    <Property Name="DealAnjieOrgName" Type="varchar" MaxLength="50" />
+    <Property Name="DealAnjieOrgID" Type="varchar" MaxLength="50" />
+    <Property Name="IsSignAnjie" Type="varchar" MaxLength="50" />
+    <Property Name="SignAnjieCode" Type="varchar" MaxLength="50" />
+    <Property Name="SignAnjieID" Type="varchar" MaxLength="50" />
+    <Property Name="SignAnjieOrgName" Type="varchar" MaxLength="50" />
+    <Property Name="SignAnjieOrgID" Type="varchar" MaxLength="50" />
+    <Property Name="DealContractDate" Type="varchar" MaxLength="50" />
+    <Property Name="SignAnjie" Type="varchar" MaxLength="50" />
+    <Property Name="HouseGivenType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Flow_CaseUnion">
+    <Key>
+      <PropertyRef Name="CU_WfmId" />
+    </Key>
+    <Property Name="CU_WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="UnionRootID" Type="varchar" MaxLength="100" />
+    <Property Name="UnionCaseNum" Type="varchar" MaxLength="100" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="50" />
+    <Property Name="UnionAction" Type="varchar" MaxLength="500" />
+    <Property Name="LawTime" Type="datetime" />
+    <Property Name="LawUserID" Type="varchar" MaxLength="50" />
+    <Property Name="FinanceTime" Type="datetime" />
+    <Property Name="FinanceUserID" Type="varchar" MaxLength="50" />
+    <Property Name="FinanceUserName" Type="varchar" MaxLength="50" />
+    <Property Name="FinishTime" Type="datetime" />
+    <Property Name="BalanceTime" Type="datetime" />
+    <Property Name="StateFlag" Type="int" Nullable="false" />
+    <Property Name="Recording_Time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Flow_CaseUnionDetail">
+    <Key>
+      <PropertyRef Name="CUID" />
+    </Key>
+    <Property Name="CUID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CU_WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OldRootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="NewRootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OldCaseNum" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NewCaseNum" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="recording_Time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_Flow_Clients">
+    <Key>
+      <PropertyRef Name="Guid" />
+    </Key>
+    <Property Name="Guid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="100" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" />
+    <Property Name="E-mail" Type="varchar" MaxLength="100" />
+    <Property Name="E-mail1" Type="varchar" MaxLength="100" />
+    <Property Name="Telephone" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile1" Type="varchar" MaxLength="50" />
+    <Property Name="FAX" Type="varchar" MaxLength="50" />
+    <Property Name="Postal_Code " Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="PIN_TYPE" Type="varchar" MaxLength="200" />
+    <Property Name="PIN_CODE" Type="varchar" MaxLength="200" />
+    <Property Name="DS_Type" Type="int" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t_Flow_ClinetInfo_Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RootID" Type="varchar" MaxLength="100" />
+    <Property Name="WfmID" Type="varchar" MaxLength="100" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="FlowName" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrgID" Type="varchar" MaxLength="50" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="FlowType" Type="nvarchar" MaxLength="30" />
+    <Property Name="LogTime" Type="datetime" />
+    <Property Name="FlowID" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="t_Flow_Commision">
+    <Key>
+      <PropertyRef Name="WfmId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ReceiptNum" Type="varchar" MaxLength="100" />
+    <Property Name="GPDate" Type="datetime" />
+    <Property Name="Proposer" Type="varchar" MaxLength="50" />
+    <Property Name="ProposerId" Type="varchar" MaxLength="50" />
+    <Property Name="Usage" Type="varchar" MaxLength="100" />
+    <Property Name="PrintAddress" Type="varchar" MaxLength="500" />
+    <Property Name="PrintTime" Type="datetime" />
+    <Property Name="MoneyType" Type="varchar" MaxLength="50" />
+    <Property Name="MoneyAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="SourceMoneyAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ExchangeRate" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="EquealRMB" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Client" Type="varchar" MaxLength="50" />
+    <Property Name="ClientType" Type="varchar" MaxLength="10" />
+    <Property Name="Bank" Type="varchar" MaxLength="50" />
+    <Property Name="CheckNum" Type="varchar" MaxLength="200" />
+    <Property Name="PayMode" Type="varchar" MaxLength="50" />
+    <Property Name="Reason" Type="varchar(max)" />
+    <Property Name="DisposeReason" Type="varchar" MaxLength="1000" />
+    <Property Name="StateFlag" Type="int" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="BillState" Type="int" />
+    <Property Name="SourceReceiptNum" Type="varchar" MaxLength="100" />
+    <Property Name="BackReason" Type="varchar" MaxLength="1000" />
+    <Property Name="IsFromFirst" Type="int" Nullable="false" />
+    <Property Name="isShare" Type="int" />
+    <Property Name="CashPrize" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CommisionMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="areaDirector" Type="varchar" MaxLength="50" />
+    <Property Name="PosBank" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyNameVAT" Type="varchar" MaxLength="200" />
+    <Property Name="TaxPayerVAT" Type="varchar" MaxLength="200" />
+    <Property Name="AddressVAT" Type="varchar" MaxLength="200" />
+    <Property Name="PhoneVAT" Type="varchar" MaxLength="200" />
+    <Property Name="BankVAT" Type="varchar" MaxLength="200" />
+    <Property Name="AccountVAT" Type="varchar" MaxLength="200" />
+    <Property Name="VATType" Type="varchar" MaxLength="10" />
+    <Property Name="eInvoice" Type="varchar" MaxLength="10" />
+    <Property Name="TQCode" Type="varchar" MaxLength="20" />
+    <Property Name="BUSISH_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIAR_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSISWZ_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIWZ_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIBA_ID" Type="varchar" MaxLength="50" />
+    <Property Name="OtherUsage" Type="varchar" MaxLength="1000" />
+    <Property Name="DSKHZGUID" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_Flow_CommissionRemit">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RemitRootID" Type="varchar" MaxLength="50" />
+    <Property Name="RemitCaseNum" Type="varchar" MaxLength="50" />
+    <Property Name="RemitSalerID" Type="varchar" MaxLength="50" />
+    <Property Name="RemitSalerName" Type="varchar" MaxLength="50" />
+    <Property Name="FullAddress" Type="varchar" MaxLength="500" />
+    <Property Name="RemitDate" Type="datetime" Nullable="false" />
+    <Property Name="RemitFlag" Type="int" />
+    <Property Name="CreateUserID" Type="varchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="Remark" Type="varchar" MaxLength="500" />
+    <Property Name="Client1" Type="varchar" MaxLength="50" />
+    <Property Name="Client2" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Flow_DelayCommission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="50" />
+    <Property Name="WfmId" Type="varchar" MaxLength="50" />
+    <Property Name="PComsiCondition1" Type="varchar" MaxLength="20" />
+    <Property Name="PComsiDate1" Type="datetime" />
+    <Property Name="PComsi1" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PComsiRemark1" Type="varchar(max)" />
+    <Property Name="PComsiCondition2" Type="varchar" MaxLength="20" />
+    <Property Name="PComsiDate2" Type="datetime" />
+    <Property Name="PComsi2" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PComsiRemark2" Type="varchar(max)" />
+    <Property Name="PComsiCondition3" Type="varchar" MaxLength="20" />
+    <Property Name="PComsiDate3" Type="datetime" />
+    <Property Name="PComsi3" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PComsiRemark3" Type="varchar(max)" />
+    <Property Name="CComsiCondition1" Type="varchar" MaxLength="20" />
+    <Property Name="CComsiDate1" Type="datetime" />
+    <Property Name="CComsi1" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="CComsiRemark1" Type="varchar(max)" />
+    <Property Name="CComsiCondition2" Type="varchar" MaxLength="20" />
+    <Property Name="CComsiDate2" Type="datetime" />
+    <Property Name="CComsi2" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="CComsiRemark2" Type="varchar(max)" />
+    <Property Name="CComsiCondition3" Type="varchar" MaxLength="20" />
+    <Property Name="CComsiDate3" Type="datetime" />
+    <Property Name="CComsi3" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="CComsiRemark3" Type="varchar(max)" />
+    <Property Name="FlowName" Type="varchar" MaxLength="50" />
+    <Property Name="AreaDirector" Type="varchar" MaxLength="50" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" />
+    <Property Name="IsNew" Type="bit" />
+    <Property Name="IsWast" Type="bit" />
+    <Property Name="IsLast" Type="int" />
+  </EntityType>
+  <EntityType Name="t_Flow_Distribution">
+    <Key>
+      <PropertyRef Name="DistributionId" />
+    </Key>
+    <Property Name="DistributionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OrgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="OrgId" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="SerialNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="Percent" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="Num" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="Achive" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Comm" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="StateFlag" Type="int" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgencyType" Type="varchar" MaxLength="50" />
+    <Property Name="AgencyRole" Type="varchar" MaxLength="50" />
+    <Property Name="CommPercent" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="UserOrgID" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrgDepartmentID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentSerialNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentOrgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="NewAgencyRole" Type="varchar" MaxLength="50" />
+    <Property Name="BUSISH_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIAR_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSISWZ_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIWZ_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIBA_ID" Type="varchar" MaxLength="50" />
+    <Property Name="areaDirector" Type="varchar" MaxLength="50" />
+    <Property Name="PercentChange" Type="varchar" MaxLength="50" />
+    <Property Name="NumChange" Type="varchar" MaxLength="50" />
+    <Property Name="CommChange" Type="varchar" MaxLength="50" />
+    <Property Name="AchiveChange" Type="varchar" MaxLength="50" />
+    <Property Name="CommPercentChange" Type="varchar" MaxLength="50" />
+    <Property Name="AreaName" Type="varchar" MaxLength="50" />
+    <Property Name="NotShow" Type="int" />
+    <Property Name="remark" Type="varchar" MaxLength="100" />
+    <Property Name="NotNumUser" Type="int" />
+    <Property Name="OrgCode" Type="varchar" MaxLength="50" />
+    <Property Name="JobCode" Type="varchar" MaxLength="32" />
+    <Property Name="JobName" Type="varchar" MaxLength="128" />
+    <Property Name="JobId" Type="char" MaxLength="32" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.t_Flow_DistributionCMS”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="t_Flow_DistributionCMS">
+    <Key>
+      <PropertyRef Name="DistributionId" />
+      <PropertyRef Name="RootId" />
+      <PropertyRef Name="WfmId" />
+    </Key>
+    <Property Name="DistributionId" Type="int" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OrgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="OrgId" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="SerialNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="Percent" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="Num" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="Achive" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Comm" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="StateFlag" Type="int" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgencyType" Type="varchar" MaxLength="50" />
+    <Property Name="AgencyRole" Type="varchar" MaxLength="50" />
+    <Property Name="CommPercent" Type="numeric" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityType Name="t_Flow_DistributionDetail">
+    <Key>
+      <PropertyRef Name="DistributionId" />
+    </Key>
+    <Property Name="DistributionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OrgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="OrgId" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="SerialNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="Percent" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="Num" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="Achive" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Comm" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="StateFlag" Type="int" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgencyType" Type="varchar" MaxLength="50" />
+    <Property Name="AgencyRole" Type="varchar" MaxLength="50" />
+    <Property Name="CommPercent" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="UserOrgID" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrgDepartmentID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentSerialNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentOrgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="NewAgencyRole" Type="varchar" MaxLength="50" />
+    <Property Name="BUSISH_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIAR_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSISWZ_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIWZ_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BUSIBA_ID" Type="varchar" MaxLength="50" />
+    <Property Name="areaDirector" Type="varchar" MaxLength="50" />
+    <Property Name="PercentChange" Type="varchar" MaxLength="50" />
+    <Property Name="NumChange" Type="varchar" MaxLength="50" />
+    <Property Name="CommChange" Type="varchar" MaxLength="50" />
+    <Property Name="AchiveChange" Type="varchar" MaxLength="50" />
+    <Property Name="CommPercentChange" Type="varchar" MaxLength="50" />
+    <Property Name="AreaName" Type="varchar" MaxLength="50" />
+    <Property Name="NotShow" Type="int" />
+    <Property Name="remark" Type="varchar" MaxLength="100" />
+    <Property Name="NotNumUser" Type="int" />
+    <Property Name="OrgCode" Type="varchar" MaxLength="50" />
+    <Property Name="JobCode" Type="varchar" MaxLength="32" />
+    <Property Name="JobName" Type="varchar" MaxLength="128" />
+    <Property Name="JobId" Type="char" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="T_Flow_DistributionDetailbak">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="100" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserCode" Type="varchar" MaxLength="50" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="PercentType" Type="varchar" MaxLength="50" />
+    <Property Name="NewAgencyRole" Type="varchar" MaxLength="50" />
+    <Property Name="BasePercent" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="RealPercent" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t_Flow_GatherPay">
+    <Key>
+      <PropertyRef Name="GatherPayId" />
+    </Key>
+    <Property Name="GatherPayId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ReceiptNum" Type="varchar" MaxLength="100" />
+    <Property Name="GPDate" Type="datetime" />
+    <Property Name="Proposer" Type="varchar" MaxLength="50" />
+    <Property Name="ProposerId" Type="varchar" MaxLength="50" />
+    <Property Name="GetInOrgId" Type="int" />
+    <Property Name="GetInOrgName" Type="varchar" MaxLength="50" />
+    <Property Name="GetOutOrgId" Type="int" />
+    <Property Name="GetOutOrgName" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserCode" Type="varchar" MaxLength="50" />
+    <Property Name="Usage" Type="varchar" MaxLength="100" />
+    <Property Name="PrintAddress" Type="varchar" MaxLength="500" />
+    <Property Name="PrintTime" Type="datetime" />
+    <Property Name="MoneyType" Type="varchar" MaxLength="50" />
+    <Property Name="MoneyAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Client" Type="nvarchar" MaxLength="50" />
+    <Property Name="ClientType" Type="varchar" MaxLength="10" />
+    <Property Name="Bank" Type="varchar" MaxLength="50" />
+    <Property Name="BankAccount" Type="varchar" MaxLength="100" />
+    <Property Name="CheckNum" Type="varchar" MaxLength="200" />
+    <Property Name="PayMode" Type="varchar" MaxLength="50" />
+    <Property Name="Reason" Type="varchar" MaxLength="1000" />
+    <Property Name="BackUpReason" Type="varchar" MaxLength="50" />
+    <Property Name="BackUpRelated" Type="varchar" MaxLength="50" />
+    <Property Name="MortgagePlace" Type="varchar" MaxLength="500" />
+    <Property Name="StateFlag" Type="int" />
+    <Property Name="CtmGuid" Type="varchar" MaxLength="100" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="ExchangeRate" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="SourceReceiptNum" Type="varchar" MaxLength="100" />
+    <Property Name="PayGUID" Type="varchar" MaxLength="100" />
+    <Property Name="RealPayer" Type="nvarchar" MaxLength="100" />
+    <Property Name="PosBank" Type="varchar" MaxLength="50" />
+    <Property Name="BankLocal" Type="varchar" MaxLength="50" />
+    <Property Name="BankFullName" Type="varchar" MaxLength="100" />
+    <Property Name="IDCardType" Type="varchar" MaxLength="100" />
+    <Property Name="IDCard" Type="varchar" MaxLength="100" />
+    <Property Name="Content" Type="varchar(max)" />
+    <Property Name="PayerType" Type="varchar" MaxLength="100" />
+    <Property Name="Payer" Type="varchar" MaxLength="100" />
+    <Property Name="OtherReason" Type="varchar" MaxLength="100" />
+    <Property Name="OtherUsage" Type="varchar" MaxLength="1000" />
+    <Property Name="GetInOrgIdA" Type="varchar" MaxLength="50" />
+    <Property Name="GetOutOrgIdA" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Flow_Litigation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="50" />
+    <Property Name="WfmId" Type="varchar" MaxLength="50" />
+    <Property Name="Applyer" Type="varchar" MaxLength="30" />
+    <Property Name="Branch" Type="varchar" MaxLength="100" />
+    <Property Name="ApplyerPhone" Type="varchar" MaxLength="20" />
+    <Property Name="PropertyName" Type="varchar" MaxLength="100" />
+    <Property Name="PropertyAddress" Type="varchar" MaxLength="150" />
+    <Property Name="CommAmount" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="IsDocument" Type="varchar" MaxLength="4" />
+    <Property Name="IsIoriginal" Type="varchar" MaxLength="4" />
+    <Property Name="CaseRemark" Type="varchar" MaxLength="200" />
+    <Property Name="UnSafeCause" Type="varchar" MaxLength="400" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" />
+    <Property Name="IsNew" Type="bit" />
+    <Property Name="IsWast" Type="bit" />
+  </EntityType>
+  <EntityType Name="T_Flow_Litigation_QSList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="50" />
+    <Property Name="QSObj" Type="varchar" MaxLength="10" />
+    <Property Name="Name" Type="varchar" MaxLength="30" />
+    <Property Name="ComAmount" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Identity" Type="varchar" MaxLength="25" />
+    <Property Name="Address" Type="varchar" MaxLength="100" />
+    <Property Name="Phone" Type="varchar" MaxLength="30" />
+    <Property Name="LiveAddress" Type="varchar" MaxLength="100" />
+    <Property Name="Reason" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="t_Flow_Loan">
+    <Key>
+      <PropertyRef Name="RootId" />
+      <PropertyRef Name="WfmId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LoanName" Type="varchar" MaxLength="50" />
+    <Property Name="PaperType" Type="varchar" MaxLength="50" />
+    <Property Name="Paper" Type="varchar" MaxLength="50" />
+    <Property Name="LoanType" Type="varchar" MaxLength="200" />
+    <Property Name="Reason" Type="varchar" MaxLength="1000" />
+    <Property Name="ReasonForBank" Type="varchar" MaxLength="100" />
+    <Property Name="Bank" Type="varchar" MaxLength="100" />
+    <Property Name="Branch" Type="varchar" MaxLength="100" />
+    <Property Name="BankLinkMan" Type="varchar" MaxLength="100" />
+    <Property Name="BankLinkPhone" Type="varchar" MaxLength="100" />
+    <Property Name="Agenct" Type="varchar" MaxLength="100" />
+    <Property Name="Telephone" Type="varchar" MaxLength="100" />
+    <Property Name="InsureMoneyReal" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="InsureDiscount" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="ContracatType" Type="varchar" MaxLength="50" />
+    <Property Name="ContractMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CommType" Type="varchar" MaxLength="50" />
+    <Property Name="CommLoan" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="LoanYear" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="LoanRate" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="AccFunLoan" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="AccLoanYear" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="EvaluateCompany" Type="varchar" MaxLength="200" />
+    <Property Name="EvaluateMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="InsureCompany" Type="varchar" MaxLength="100" />
+    <Property Name="InsureMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="JudgeCity" Type="varchar" MaxLength="100" />
+    <Property Name="JudgeName" Type="varchar" MaxLength="100" />
+    <Property Name="JudgeMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="LoanSpecId" Type="varchar" MaxLength="50" />
+    <Property Name="LoanSpecName" Type="char" MaxLength="10" />
+    <Property Name="ChkType" Type="varchar" MaxLength="50" />
+    <Property Name="ChkLoanName" Type="varchar" MaxLength="50" />
+    <Property Name="ChkBank" Type="varchar" MaxLength="100" />
+    <Property Name="ChkBranch" Type="varchar" MaxLength="100" />
+    <Property Name="ChkCorpBank" Type="bit" />
+    <Property Name="ChkMoneyType" Type="varchar" MaxLength="100" />
+    <Property Name="ChkMoney" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="ChkRMB" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="ChkAccLoan" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="ChkAddress" Type="varchar" MaxLength="200" />
+    <Property Name="ChkUserName" Type="varchar" MaxLength="100" />
+    <Property Name="ChkDepartment" Type="varchar" MaxLength="100" />
+    <Property Name="ChkConclusion" Type="varchar" MaxLength="100" />
+    <Property Name="ChkReason" Type="varchar" MaxLength="1000" />
+    <Property Name="ChkDirectConclusion" Type="varchar" MaxLength="100" />
+    <Property Name="ChkDirectReason" Type="varchar" MaxLength="1000" />
+    <Property Name="SendFinanceTime" Type="datetime" />
+    <Property Name="SendLoanSpecTime" Type="datetime" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="datetime" />
+    <Property Name="CQAddress" Type="varchar" MaxLength="200" />
+    <Property Name="ChkUserId" Type="varchar" MaxLength="50" />
+    <Property Name="FlowName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_Flow_LoanChange">
+    <Key>
+      <PropertyRef Name="RootId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CaseQuHR" Type="varchar" MaxLength="100" />
+    <Property Name="CaseLuHR" Type="varchar" MaxLength="100" />
+    <Property Name="CaseLongHR" Type="varchar" MaxLength="100" />
+    <Property Name="CaseHaoHR" Type="varchar" MaxLength="100" />
+    <Property Name="CaseShiHR" Type="varchar" MaxLength="100" />
+    <Property Name="LoanCircsR" Type="varchar" MaxLength="50" />
+    <Property Name="NoLoanCauseR" Type="varchar" MaxLength="50" />
+    <Property Name="LoanBankR" Type="varchar" MaxLength="50" />
+    <Property Name="GSbankR" Type="varchar" MaxLength="50" />
+    <Property Name="HandleR" Type="varchar" MaxLength="50" />
+    <Property Name="HandleJobR" Type="varchar" MaxLength="50" />
+    <Property Name="HandlePHR" Type="varchar" MaxLength="50" />
+    <Property Name="BankNameR" Type="varchar" MaxLength="50" />
+    <Property Name="SubbranchR" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneKR" Type="varchar" MaxLength="50" />
+    <Property Name="HandleKR" Type="varchar" MaxLength="50" />
+    <Property Name="HandleKPHR" Type="varchar" MaxLength="50" />
+    <Property Name="AppointR" Type="varchar" MaxLength="500" />
+    <Property Name="XunBankR" Type="varchar" MaxLength="500" />
+    <Property Name="lCauseR" Type="varchar" MaxLength="100" />
+    <Property Name="OtherR" Type="varchar" MaxLength="500" />
+    <Property Name="NameBankR" Type="varchar" MaxLength="50" />
+    <Property Name="BranchSubR" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneKHR" Type="varchar" MaxLength="50" />
+    <Property Name="LinkmanR" Type="varchar" MaxLength="50" />
+    <Property Name="LinkmanJR" Type="varchar" MaxLength="50" />
+    <Property Name="LinkmanPR" Type="varchar" MaxLength="50" />
+    <Property Name="LoanNameR" Type="varchar" MaxLength="50" />
+    <Property Name="PaperStyleR" Type="varchar" MaxLength="50" />
+    <Property Name="PSOtherR" Type="varchar" MaxLength="50" />
+    <Property Name="CodeR" Type="varchar" MaxLength="50" />
+    <Property Name="AttorneyR" Type="varchar" MaxLength="50" />
+    <Property Name="AttNameR" Type="varchar" MaxLength="50" />
+    <Property Name="AttPhoneR" Type="varchar" MaxLength="50" />
+    <Property Name="InsuranceR" Type="varchar" MaxLength="50" />
+    <Property Name="InsuranceAgioR" Type="varchar" MaxLength="50" />
+    <Property Name="HTPriceR" Type="varchar" MaxLength="50" />
+    <Property Name="CLoanR" Type="varchar" MaxLength="50" />
+    <Property Name="CLoanYearR" Type="varchar" MaxLength="50" />
+    <Property Name="LoanRateR" Type="varchar" MaxLength="50" />
+    <Property Name="ALoanR" Type="varchar" MaxLength="50" />
+    <Property Name="ALoanYearR" Type="varchar" MaxLength="50" />
+    <Property Name="EvaluationR" Type="varchar" MaxLength="50" />
+    <Property Name="EvaluationMR" Type="varchar" MaxLength="50" />
+    <Property Name="AssureR" Type="varchar" MaxLength="50" />
+    <Property Name="AssureMR" Type="varchar" MaxLength="50" />
+    <Property Name="GreffierR" Type="varchar" MaxLength="50" />
+    <Property Name="GreffierNR" Type="varchar" MaxLength="50" />
+    <Property Name="dChangeCauseR" Type="varchar" MaxLength="50" />
+    <Property Name="tChangeCauseR" Type="varchar" MaxLength="500" />
+    <Property Name="RecordeUser" Type="varchar" MaxLength="100" />
+    <Property Name="RecordeTime" Type="datetime" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="LoanWfmid" Type="varchar" MaxLength="50" />
+    <Property Name="PushState" Type="int" />
+    <Property Name="PushTime" Type="datetime" />
+    <Property Name="FailReason" Type="varchar" MaxLength="100" />
+    <Property Name="pushUser" Type="varchar" MaxLength="50" />
+    <Property Name="GreffierMR" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_Flow_Mortgage">
+    <Key>
+      <PropertyRef Name="RootId" />
+      <PropertyRef Name="WfmId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SigningTimeFrom" Type="datetime" />
+    <Property Name="SigningTimeTo" Type="datetime" />
+    <Property Name="SigningAddress" Type="varchar" MaxLength="500" />
+    <Property Name="SignOnScene" Type="varchar" MaxLength="100" />
+    <Property Name="ReasonForSignAbsent" Type="varchar" MaxLength="1000" />
+    <Property Name="IsLoaned" Type="varchar" MaxLength="100" />
+    <Property Name="IsPledged" Type="varchar" MaxLength="100" />
+    <Property Name="DisposeDate" Type="datetime" />
+    <Property Name="SendDate" Type="datetime" />
+    <Property Name="SendOnScene" Type="varchar" MaxLength="100" />
+    <Property Name="ReasonForSendAbsent" Type="varchar" MaxLength="1000" />
+    <Property Name="FullMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="SignOrgId" Type="varchar" MaxLength="20" />
+    <Property Name="SignOrgName" Type="varchar" MaxLength="100" />
+    <Property Name="SignUserId" Type="varchar" MaxLength="50" />
+    <Property Name="SignUserName" Type="varchar" MaxLength="50" />
+    <Property Name="SignPercent" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="SendOrgId" Type="varchar" MaxLength="20" />
+    <Property Name="SendOrgName" Type="varchar" MaxLength="100" />
+    <Property Name="SendUserId" Type="varchar" MaxLength="50" />
+    <Property Name="SendUserName" Type="varchar" MaxLength="50" />
+    <Property Name="SendPercent" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="NewProperty" Type="varchar" MaxLength="50" />
+    <Property Name="FlowType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Flow_NonIncomeDetail">
+    <Key>
+      <PropertyRef Name="wfmid" />
+    </Key>
+    <Property Name="rootid" Type="varchar" MaxLength="50" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CooprateAmount" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="CooprateType" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="RealPayoutType" Type="varchar" MaxLength="50" />
+    <Property Name="Tax" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="TaxType" Type="varchar" MaxLength="50" />
+    <Property Name="CooprateAmount1" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="CooprateType1" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout1" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="RealPayoutType1" Type="varchar" MaxLength="50" />
+    <Property Name="Tax1" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="TaxType1" Type="varchar" MaxLength="50" />
+    <Property Name="UComP1" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComName1" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComPName1" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComDuty1" Type="varchar" MaxLength="50" />
+    <Property Name="DBPhone1" Type="varchar" MaxLength="50" />
+    <Property Name="SFZCode1" Type="varchar" MaxLength="50" />
+    <Property Name="PayReason1" Type="nvarchar" MaxLength="500" />
+    <Property Name="CooprateAmount2" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="CooprateType2" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout2" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="RealPayoutType2" Type="varchar" MaxLength="50" />
+    <Property Name="Tax2" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="TaxType2" Type="varchar" MaxLength="50" />
+    <Property Name="UComP2" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComName2" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComPName2" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComDuty2" Type="varchar" MaxLength="50" />
+    <Property Name="DBPhone2" Type="varchar" MaxLength="50" />
+    <Property Name="SFZCode2" Type="varchar" MaxLength="50" />
+    <Property Name="PayReason2" Type="nvarchar" MaxLength="500" />
+    <Property Name="CooprateAmount3" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="CooprateType3" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout3" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="RealPayoutType3" Type="varchar" MaxLength="50" />
+    <Property Name="Tax3" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="TaxType3" Type="varchar" MaxLength="50" />
+    <Property Name="UComP3" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComName3" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComPName3" Type="nvarchar" MaxLength="200" />
+    <Property Name="UComDuty3" Type="varchar" MaxLength="50" />
+    <Property Name="DBPhone3" Type="varchar" MaxLength="50" />
+    <Property Name="SFZCode3" Type="varchar" MaxLength="50" />
+    <Property Name="PayReason3" Type="nvarchar" MaxLength="500" />
+    <Property Name="ZJAmount" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="ZJType" Type="varchar" MaxLength="50" />
+    <Property Name="ZJDX" Type="varchar" MaxLength="200" />
+    <Property Name="ZJAmount1" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ZJType1" Type="varchar" MaxLength="50" />
+    <Property Name="ZJDX1" Type="nvarchar" MaxLength="500" />
+    <Property Name="ZJAmount2" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ZJType2" Type="varchar" MaxLength="50" />
+    <Property Name="ZJDX2" Type="nvarchar" MaxLength="500" />
+    <Property Name="NonCorpIncome" Type="numeric" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="NonCorpIncomeType" Type="varchar" MaxLength="50" />
+    <Property Name="RentStartTime" Type="datetime" />
+    <Property Name="RentEndTime" Type="datetime" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+    <Property Name="UComCmName1" Type="varchar" MaxLength="200" />
+    <Property Name="UComCmName2" Type="varchar" MaxLength="200" />
+    <Property Name="UComCmName3" Type="varchar" MaxLength="200" />
+    <Property Name="RealPayout1Change" Type="varchar" MaxLength="50" />
+    <Property Name="Tax1Change" Type="varchar" MaxLength="50" />
+    <Property Name="CooprateAmount1Change" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout2Change" Type="varchar" MaxLength="50" />
+    <Property Name="Tax2Change" Type="varchar" MaxLength="50" />
+    <Property Name="CooprateAmount2Change" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout3Change" Type="varchar" MaxLength="50" />
+    <Property Name="Tax3Change" Type="varchar" MaxLength="50" />
+    <Property Name="CooprateAmount3Change" Type="varchar" MaxLength="50" />
+    <Property Name="NonCorpIncomeChange" Type="varchar" MaxLength="50" />
+    <Property Name="ZJAmount1Change" Type="varchar" MaxLength="50" />
+    <Property Name="ZJAmount2Change" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_Flow_Trade">
+    <Key>
+      <PropertyRef Name="TradeId" />
+    </Key>
+    <Property Name="TradeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WfmId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TradeType" Type="varchar" MaxLength="50" />
+    <Property Name="Property" Type="varchar" MaxLength="50" />
+    <Property Name="PriceType" Type="varchar" MaxLength="50" />
+    <Property Name="Price" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="GotMoneyType" Type="varchar" MaxLength="50" />
+    <Property Name="GotMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ContractDate" Type="datetime" />
+    <Property Name="CompactDate" Type="datetime" />
+    <Property Name="ClientCommType" Type="varchar" MaxLength="50" />
+    <Property Name="ClientComm" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ClientPreDate" Type="datetime" />
+    <Property Name="HostCommType" Type="varchar" MaxLength="50" />
+    <Property Name="HostComm" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="HostPreDate" Type="datetime" />
+    <Property Name="NonCorpIncomeType" Type="varchar" MaxLength="50" />
+    <Property Name="NonCorpIncome" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="RealPayoutType" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CorpIncomeType" Type="varchar" MaxLength="50" />
+    <Property Name="CorpIncome" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TaxType" Type="varchar" MaxLength="50" />
+    <Property Name="Tax" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Discount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="AnJieMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="LawMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="StateFlag" Type="int" />
+    <Property Name="recording_time" Type="datetime" />
+    <Property Name="updated_time" Type="datetime" />
+    <Property Name="OverType" Type="varchar" MaxLength="100" />
+    <Property Name="OverMoneyType" Type="varchar" MaxLength="50" />
+    <Property Name="OverMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ChangeCause" Type="varchar(max)" />
+    <Property Name="discountCause" Type="varchar(max)" />
+    <Property Name="NonCorpIncomeType2" Type="varchar" MaxLength="50" />
+    <Property Name="NonCorpIncome2" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="RealPayoutType2" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout2" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Tax2" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TaxType2" Type="varchar" MaxLength="50" />
+    <Property Name="NonCorpIncomeType3" Type="varchar" MaxLength="50" />
+    <Property Name="NonCorpIncome3" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="RealPayoutType3" Type="varchar" MaxLength="50" />
+    <Property Name="RealPayout3" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TaxType3" Type="varchar" MaxLength="50" />
+    <Property Name="Tax3" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CooprateAmount" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="CooprateType" Type="varchar" MaxLength="50" />
+    <Property Name="ZJAmount" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="ZJType" Type="varchar" MaxLength="50" />
+    <Property Name="cashRule" Type="varchar" MaxLength="200" />
+    <Property Name="cashAmount" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="areaDirector" Type="varchar" MaxLength="50" />
+    <Property Name="ChangeType" Type="varchar" MaxLength="200" />
+    <Property Name="PRootid" Type="varchar" MaxLength="50" />
+    <Property Name="IsNew" Type="int" />
+    <Property Name="ZPriceType" Type="varchar" MaxLength="30" />
+    <Property Name="ZPrice" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="IsLast" Type="int" />
+    <Property Name="IsRpt" Type="int" />
+    <Property Name="IsClear" Type="int" />
+    <Property Name="IsNewHome" Type="int" />
+    <Property Name="ContractType" Type="varchar" MaxLength="50" />
+    <Property Name="EarnestDate" Type="datetime" />
+    <Property Name="JuJian" Type="int" />
+    <Property Name="JuJianCode" Type="varchar" MaxLength="100" />
+    <Property Name="NoJuJianReason" Type="varchar" MaxLength="100" />
+    <Property Name="mandate" Type="int" />
+    <Property Name="ConnectFile" Type="int" />
+    <Property Name="YSHouse" Type="int" />
+    <Property Name="ConnectDate" Type="datetime" />
+    <Property Name="CertifeDate" Type="datetime" />
+    <Property Name="CommMoney" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="AnJieMoneyRate" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TotalPercent" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TotalNum" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TotalComm" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TotalAchive" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="TotalCommPercent" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="HostCommChange" Type="varchar" MaxLength="50" />
+    <Property Name="ClientCommChange" Type="varchar" MaxLength="50" />
+    <Property Name="DiscountChange" Type="varchar" MaxLength="50" />
+    <Property Name="CommMoneyChange" Type="varchar" MaxLength="50" />
+    <Property Name="CorpIncomeChange" Type="varchar" MaxLength="50" />
+    <Property Name="AnJieMoneyChange" Type="varchar" MaxLength="50" />
+    <Property Name="AnJieMoneyRateChange" Type="varchar" MaxLength="50" />
+    <Property Name="ZYReason" Type="varchar" MaxLength="100" />
+    <Property Name="ContractPer" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="PercentChange" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="IsLock" Type="int" />
+  </EntityType>
+  <EntityType Name="t_innerfinance_case">
+    <Key>
+      <PropertyRef Name="RootId" />
+    </Key>
+    <Property Name="RootId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CaseType" Type="varchar" MaxLength="30" />
+    <Property Name="ReceiptNum" Type="varchar" MaxLength="100" />
+    <Property Name="Rootbalance" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="HongKongdollar" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="USAdollarbalance" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Yenbalance" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="CheckString" Type="varchar" MaxLength="2" />
+    <Property Name="lastupdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t_innerfinance_flow">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WfmID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="statueflag" Type="int" />
+    <Property Name="processTime" Type="datetime" />
+    <Property Name="processUser" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Log_CommissionFollow">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RootId" Type="varchar" MaxLength="50" />
+    <Property Name="CaseNumber" Type="varchar" MaxLength="50" />
+    <Property Name="Flower" Type="varchar" MaxLength="50" />
+    <Property Name="Roler" Type="varchar" MaxLength="50" />
+    <Property Name="FlowDate" Type="datetime" />
+    <Property Name="FlowContent" Type="nvarchar" MaxLength="500" />
+    <Property Name="FlowStatus" Type="varchar" MaxLength="50" />
+    <Property Name="FlowType" Type="tinyint" />
+    <Property Name="IsNew" Type="bit" />
+    <Property Name="IsDelete" Type="bit" />
+    <Property Name="Note" Type="nvarchar" MaxLength="500" />
+    <Property Name="HaveDone" Type="nvarchar" MaxLength="500" />
+    <Property Name="WillDo" Type="nvarchar" MaxLength="500" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="UpDown" Type="varchar" MaxLength="10" />
+    <Property Name="ParentId" Type="uniqueidentifier" />
+    <Property Name="RecordTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t_Log_EditClient">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rootID" Type="varchar" MaxLength="50" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="userName" Type="varchar" MaxLength="50" />
+    <Property Name="clientType" Type="varchar" MaxLength="50" />
+    <Property Name="ChangeDetail" Type="varchar" MaxLength="100" />
+    <Property Name="NewContent" Type="varchar" MaxLength="500" />
+    <Property Name="OldContent" Type="varchar" MaxLength="500" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Log_News">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="newsType" Type="varchar" MaxLength="50" />
+    <Property Name="newsContent" Type="nvarchar(max)" />
+    <Property Name="sender" Type="varchar" MaxLength="50" />
+    <Property Name="senderName" Type="varchar" MaxLength="50" />
+    <Property Name="senderTime" Type="datetime" />
+    <Property Name="receiver" Type="nvarchar(max)" />
+    <Property Name="receiverTime" Type="datetime" />
+    <Property Name="isRead" Type="int" Nullable="false" />
+    <Property Name="drecordTime" Type="datetime" />
+    <Property Name="actType" Type="varchar" MaxLength="50" />
+    <Property Name="actUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="newsTitle" Type="nvarchar" MaxLength="500" />
+    <Property Name="orderby" Type="int" />
+    <Property Name="wfmid" Type="varchar" MaxLength="200" />
+    <Property Name="rootid" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_Log_PrintCash">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PrintNum" Type="varchar" MaxLength="20" />
+    <Property Name="PrintUserID" Type="varchar" MaxLength="50" />
+    <Property Name="PrintUserName" Type="varchar" MaxLength="50" />
+    <Property Name="PrintOrgID" Type="varchar" MaxLength="50" />
+    <Property Name="PrintOrgName" Type="varchar" MaxLength="50" />
+    <Property Name="PrintTime" Type="datetime" />
+    <Property Name="IsSucess" Type="int" Nullable="false" />
+    <Property Name="PMessage" Type="varchar" MaxLength="500" />
+    <Property Name="dRecordCreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“CTMMIS.dbo.T_LogCommissionAsync”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="T_LogCommissionAsync">
+          <Property Name="Type" Type="tinyint" />
+          <Property Name="AsyncTime" Type="datetime" />
+        </EntityType>-->
+  <EntityType Name="T_PrintCash_Bank">
+    <Key>
+      <PropertyRef Name="PBankID" />
+    </Key>
+    <Property Name="PBankID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PBankName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="XLength" Type="int" Nullable="false" />
+    <Property Name="YLength" Type="int" Nullable="false" />
+    <Property Name="dRecordCreateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Pro_Project">
+    <Key>
+      <PropertyRef Name="ProjectId" />
+    </Key>
+    <Property Name="ProjectId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ProjectCode" Type="varchar" MaxLength="50" />
+    <Property Name="ProjectNum" Type="varchar" MaxLength="50" />
+    <Property Name="PreProjectName" Type="varchar" MaxLength="50" />
+    <Property Name="ProjectName" Type="varchar" MaxLength="100" />
+    <Property Name="projectAddress" Type="varchar(max)" />
+    <Property Name="OrgFullName" Type="varchar" MaxLength="50" />
+    <Property Name="orgName" Type="varchar" MaxLength="50" />
+    <Property Name="orgCode" Type="varchar" MaxLength="50" />
+    <Property Name="Developer" Type="varchar" MaxLength="50" />
+    <Property Name="AnJieCharge" Type="numeric" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="isFirst" Type="int" Nullable="false" />
+    <Property Name="OrgType" Type="int" />
+    <Property Name="createTime" Type="datetime" Nullable="false" />
+    <Property Name="drecordTime" Type="datetime" />
+    <Property Name="EstateGuid" Type="varchar" MaxLength="50" />
+    <Property Name="DailiType" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="100" />
+    <Property Name="Area" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="T_Pro_ProjectCashRule">
+    <Key>
+      <PropertyRef Name="Cid" />
+    </Key>
+    <Property Name="Cid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" />
+    <Property Name="projectId" Type="varchar" MaxLength="100" />
+    <Property Name="cashRule" Type="varchar" MaxLength="200" />
+    <Property Name="cashAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="iswaste" Type="int" />
+    <Property Name="createTime" Type="datetime" />
+    <Property Name="drecordTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t_Pro_ProjectDaili">
+    <Key>
+      <PropertyRef Name="ProDevID" />
+    </Key>
+    <Property Name="ProDevID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectId" Type="varchar" MaxLength="100" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" />
+    <Property Name="StartRate" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="EndRate" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="Starttime" Type="datetime" />
+    <Property Name="Endtime" Type="datetime" />
+    <Property Name="isNew" Type="bigint" Nullable="false" />
+    <Property Name="IsWast" Type="int" Nullable="false" />
+    <Property Name="Createtime" Type="datetime" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="DailiType" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="100" />
+    <Property Name="Area" Type="varchar" MaxLength="100" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+    <Property Name="projectInfo" Type="nvarchar" MaxLength="500" />
+    <Property Name="commCondition" Type="varchar" MaxLength="20" />
+    <Property Name="getLoanTime" Type="datetime" />
+    <Property Name="isFinalPayment" Type="int" />
+    <Property Name="FinalPaymentRate" Type="numeric" Precision="18" Scale="6" />
+    <Property Name="isCashPrize" Type="int" />
+    <Property Name="ProxyNum" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Pro_ProjectUser">
+    <Key>
+      <PropertyRef Name="ProUserID" />
+    </Key>
+    <Property Name="ProUserID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectId" Type="varchar" MaxLength="100" />
+    <Property Name="DeveloperName" Type="nvarchar(max)" />
+    <Property Name="userCode" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="userId" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerCode" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerName" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerUserID" Type="varchar" MaxLength="50" />
+    <Property Name="UserRole" Type="varchar" MaxLength="50" />
+    <Property Name="isNew" Type="int" Nullable="false" />
+    <Property Name="dRecordTime" Type="datetime" Nullable="false" />
+    <Property Name="ProUser" Type="varchar" MaxLength="50" />
+    <Property Name="EmpGuid" Type="varchar" MaxLength="50" />
+    <Property Name="EstateUserID" Type="varchar" MaxLength="50" />
+    <Property Name="Wfmid" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_pub_user_parents">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USER_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="User_code" Type="varchar" MaxLength="50" />
+    <Property Name="duty_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsTempUser" Type="varchar" MaxLength="50" />
+    <Property Name="P1_User_id" Type="varchar" MaxLength="50" />
+    <Property Name="P1_User_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="P1_User_code" Type="varchar" MaxLength="50" />
+    <Property Name="P1_duty_name" Type="varchar" MaxLength="100" />
+    <Property Name="P2_User_id" Type="varchar" MaxLength="50" />
+    <Property Name="P2_User_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="P2_User_code" Type="varchar" MaxLength="50" />
+    <Property Name="p2_duty_name" Type="varchar" MaxLength="100" />
+    <Property Name="P3_User_id" Type="varchar" MaxLength="50" />
+    <Property Name="P3_User_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="P3_User_code" Type="varchar" MaxLength="50" />
+    <Property Name="p3_duty_name" Type="varchar" MaxLength="100" />
+    <Property Name="P4_User_id" Type="varchar" MaxLength="50" />
+    <Property Name="P4_User_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="P4_User_code" Type="varchar" MaxLength="50" />
+    <Property Name="p4_duty_name" Type="varchar" MaxLength="100" />
+    <Property Name="P5_User_id" Type="varchar" MaxLength="50" />
+    <Property Name="P5_User_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="P5_User_code" Type="varchar" MaxLength="50" />
+    <Property Name="p5_duty_name" Type="varchar" MaxLength="100" />
+    <Property Name="P6_User_id" Type="varchar" MaxLength="50" />
+    <Property Name="P6_User_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="P6_User_code" Type="varchar" MaxLength="50" />
+    <Property Name="p6_duty_name" Type="varchar" MaxLength="100" />
+    <Property Name="drecordTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_pub_UserParents">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="BranchMgr" Type="varchar" MaxLength="50" />
+    <Property Name="SeniorMgr" Type="varchar" MaxLength="50" />
+    <Property Name="AreaMgr" Type="varchar" MaxLength="50" />
+    <Property Name="AreaMajordomo" Type="varchar" MaxLength="50" />
+    <Property Name="VicePresident" Type="varchar" MaxLength="50" />
+    <Property Name="branchid" Type="varchar" MaxLength="50" />
+    <Property Name="branchname" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Publish_NewsLog">
+    <Key>
+      <PropertyRef Name="NLID" />
+    </Key>
+    <Property Name="NLID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PublishDate" Type="datetime" />
+    <Property Name="Title" Type="varchar" MaxLength="500" />
+    <Property Name="Content" Type="varchar" MaxLength="2000" />
+    <Property Name="Flag" Type="int" />
+    <Property Name="Message" Type="varchar" MaxLength="1000" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t_Receipt_Detail">
+    <Key>
+      <PropertyRef Name="Serial" />
+    </Key>
+    <Property Name="Serial" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="rcptSetId" Type="int" />
+    <Property Name="Remark1" Type="varchar" MaxLength="1000" />
+    <Property Name="Remark2" Type="varchar" MaxLength="1000" />
+    <Property Name="ReturnId" Type="varchar" MaxLength="50" />
+    <Property Name="ReturnName" Type="varchar" MaxLength="50" />
+    <Property Name="ReturnTime" Type="datetime" />
+    <Property Name="CheckId" Type="varchar" MaxLength="50" />
+    <Property Name="CheckName" Type="varchar" MaxLength="50" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="Iswaste" Type="int" />
+    <Property Name="StateFlag" Type="varchar" MaxLength="50" />
+    <Property Name="create_time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t_Receipt_Log">
+    <Key>
+      <PropertyRef Name="rcptSetId" />
+    </Key>
+    <Property Name="rcptSetId" Type="int" Nullable="false" />
+    <Property Name="SerialBegin" Type="varchar" MaxLength="100" />
+    <Property Name="SerialEnd" Type="varchar" MaxLength="100" />
+    <Property Name="OwnerId" Type="varchar" MaxLength="50" />
+    <Property Name="OwnerName" Type="varchar" MaxLength="50" />
+    <Property Name="OwnerSerial" Type="varchar" MaxLength="50" />
+    <Property Name="OwnerOrg" Type="varchar" MaxLength="100" />
+    <Property Name="OwnerOrgId" Type="varchar" MaxLength="50" />
+    <Property Name="AgentId" Type="varchar" MaxLength="50" />
+    <Property Name="AgentName" Type="varchar" MaxLength="50" />
+    <Property Name="AgentSerial" Type="varchar" MaxLength="50" />
+    <Property Name="AgentOrgId" Type="varchar" MaxLength="50" />
+    <Property Name="AgentOrg" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="1000" />
+    <Property Name="StateFlag" Type="varchar" MaxLength="50" />
+    <Property Name="Sendid" Type="varchar" MaxLength="50" />
+    <Property Name="SendName" Type="varchar" MaxLength="50" />
+    <Property Name="GivenTime" Type="datetime" />
+    <Property Name="EditId" Type="varchar" MaxLength="50" />
+    <Property Name="EditName" Type="varchar" MaxLength="50" />
+    <Property Name="EditTime" Type="datetime" />
+    <Property Name="LogMassage" Type="nvarchar" MaxLength="500" />
+    <Property Name="create_time" Type="datetime" />
+    <Property Name="OwnerOrgIdA" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_Receipt_Manage">
+    <Key>
+      <PropertyRef Name="rcptSetId" />
+    </Key>
+    <Property Name="rcptSetId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SerialBegin" Type="varchar" MaxLength="100" />
+    <Property Name="SerialEnd" Type="varchar" MaxLength="100" />
+    <Property Name="OwnerId" Type="varchar" MaxLength="50" />
+    <Property Name="OwnerName" Type="varchar" MaxLength="50" />
+    <Property Name="OwnerSerial" Type="varchar" MaxLength="50" />
+    <Property Name="OwnerOrg" Type="varchar" MaxLength="100" />
+    <Property Name="OwnerOrgId" Type="varchar" MaxLength="50" />
+    <Property Name="AgentId" Type="varchar" MaxLength="50" />
+    <Property Name="AgentName" Type="varchar" MaxLength="50" />
+    <Property Name="AgentSerial" Type="varchar" MaxLength="50" />
+    <Property Name="AgentOrgId" Type="varchar" MaxLength="50" />
+    <Property Name="AgentOrg" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="1000" />
+    <Property Name="StateFlag" Type="varchar" MaxLength="50" />
+    <Property Name="Sendid" Type="varchar" MaxLength="50" />
+    <Property Name="SendName" Type="varchar" MaxLength="50" />
+    <Property Name="GivenTime" Type="datetime" />
+    <Property Name="EditId" Type="varchar" MaxLength="50" />
+    <Property Name="EditName" Type="varchar" MaxLength="50" />
+    <Property Name="EditTime" Type="datetime" />
+    <Property Name="create_time" Type="datetime" />
+    <Property Name="OwnerOrgIdA" Type="varchar" MaxLength="100" />
+    <Property Name="OwnerOrgCode" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="t_Receipt_Yellow">
+    <Key>
+      <PropertyRef Name="wfmid" />
+    </Key>
+    <Property Name="ReceiptNum" Type="varchar" MaxLength="50" />
+    <Property Name="wfmid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PropertyName" Type="varchar" MaxLength="500" />
+    <Property Name="OrgName" Type="varchar" MaxLength="50" />
+    <Property Name="OrgId" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserSerial" Type="varchar" MaxLength="50" />
+    <Property Name="ReturnState" Type="varchar" MaxLength="50" />
+    <Property Name="StateFlag" Type="int" />
+    <Property Name="CheckId" Type="varchar" MaxLength="50" />
+    <Property Name="CheckName" Type="varchar" MaxLength="50" />
+    <Property Name="CheckTime" Type="datetime" />
+    <Property Name="create_time" Type="datetime" />
+    <Property Name="RootId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrgIdA" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“CTMMIS.dbo.TWF_TCB_Property”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="TWF_TCB_Property">
+    <Key>
+      <PropertyRef Name="WFM_ID" />
+      <PropertyRef Name="Case_WFM_ID" />
+      <PropertyRef Name="PropertyID" />
+      <PropertyRef Name="EstateID" />
+      <PropertyRef Name="DISP_ID" />
+      <PropertyRef Name="Case_Estate" />
+      <PropertyRef Name="BizUser_ID" />
+      <PropertyRef Name="BizUser_Name" />
+      <PropertyRef Name="BizOrg_Name" />
+      <PropertyRef Name="Intent_Date" />
+      <PropertyRef Name="Earnest_Date" />
+      <PropertyRef Name="Signup_Date" />
+      <PropertyRef Name="Change_Date" />
+      <PropertyRef Name="Blowdown_Date" />
+      <PropertyRef Name="EndCase_Date" />
+      <PropertyRef Name="dRecordCreationDate" />
+      <PropertyRef Name="sRecordCreator" />
+      <PropertyRef Name="sRecordVersion" />
+    </Key>
+    <Property Name="WFM_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Case_WFM_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PropertyID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EstateID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DISP_ID" Type="int" Nullable="false" />
+    <Property Name="CityName" Type="varchar" MaxLength="50" />
+    <Property Name="DistrictName" Type="varchar" MaxLength="50" />
+    <Property Name="AreaName" Type="varchar" MaxLength="50" />
+    <Property Name="EstateName" Type="varchar" MaxLength="200" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="RoomNo" Type="varchar" MaxLength="50" />
+    <Property Name="Spell" Type="varchar" MaxLength="50" />
+    <Property Name="ProAddr" Type="varchar" MaxLength="500" />
+    <Property Name="Case_Estate" Type="int" Nullable="false" />
+    <Property Name="Case_Owner" Type="varchar" MaxLength="50" />
+    <Property Name="Case_OwnerName" Type="varchar" MaxLength="50" />
+    <Property Name="BizUser_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BizUser_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BizOrg_ID" Type="varchar" MaxLength="50" />
+    <Property Name="BizOrg_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Intent_Date" Type="datetime" Nullable="false" />
+    <Property Name="Earnest_Date" Type="datetime" Nullable="false" />
+    <Property Name="Signup_Date" Type="datetime" Nullable="false" />
+    <Property Name="Change_Date" Type="datetime" Nullable="false" />
+    <Property Name="Blowdown_Date" Type="datetime" Nullable="false" />
+    <Property Name="EndCase_Date" Type="datetime" Nullable="false" />
+    <Property Name="dRecordCreationDate" Type="datetime" Nullable="false" />
+    <Property Name="sRecordCreator" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sRecordVersion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="HR_Base_HR_Relation_FK1">
+    <End Role="HR_Base" Type="Self.HR_Base" Multiplicity="0..1" />
+    <End Role="HR_Relation" Type="Self.HR_Relation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Base">
+        <PropertyRef Name="baseId" />
+      </Principal>
+      <Dependent Role="HR_Relation">
+        <PropertyRef Name="baseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HR_Department_HR_Relation_FK1">
+    <End Role="HR_Department" Type="Self.HR_Department" Multiplicity="0..1" />
+    <End Role="HR_Relation" Type="Self.HR_Relation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Department">
+        <PropertyRef Name="deptId" />
+      </Principal>
+      <Dependent Role="HR_Relation">
+        <PropertyRef Name="deptId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="t_Case_Main_t_Case_Property_FK1">
+    <End Role="t_Case_Main" Type="Self.t_Case_Main" Multiplicity="1" />
+    <End Role="t_Case_Property" Type="Self.t_Case_Property" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="t_Case_Main">
+        <PropertyRef Name="RootId" />
+      </Principal>
+      <Dependent Role="t_Case_Property">
+        <PropertyRef Name="RootId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="T_Flow_CaseUnion_T_Flow_CaseUnionDetail_FK1">
+    <End Role="T_Flow_CaseUnion" Type="Self.T_Flow_CaseUnion" Multiplicity="1" />
+    <End Role="T_Flow_CaseUnionDetail" Type="Self.T_Flow_CaseUnionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Flow_CaseUnion">
+        <PropertyRef Name="CU_WfmId" />
+      </Principal>
+      <Dependent Role="T_Flow_CaseUnionDetail">
+        <PropertyRef Name="CU_WfmId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="t_innerfinance_case_t_innerfinance_flow_FK1">
+    <End Role="t_innerfinance_case" Type="Self.t_innerfinance_case" Multiplicity="1" />
+    <End Role="t_innerfinance_flow" Type="Self.t_innerfinance_flow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_innerfinance_case">
+        <PropertyRef Name="RootId" />
+      </Principal>
+      <Dependent Role="t_innerfinance_flow">
+        <PropertyRef Name="RootId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="t_Receipt_Manage_t_Receipt_Detail_FK1">
+    <End Role="t_Receipt_Manage" Type="Self.t_Receipt_Manage" Multiplicity="0..1" />
+    <End Role="t_Receipt_Detail" Type="Self.t_Receipt_Detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_Receipt_Manage">
+        <PropertyRef Name="rcptSetId" />
+      </Principal>
+      <Dependent Role="t_Receipt_Detail">
+        <PropertyRef Name="rcptSetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DataModelStoreContainer">
+    <EntitySet Name="HR_Base" EntityType="Self.HR_Base" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HR_Department" EntityType="Self.HR_Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HR_Error" EntityType="Self.HR_Error" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HR_Level" EntityType="Self.HR_Level" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HR_Org" EntityType="Self.HR_Org" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HR_Relation" EntityType="Self.HR_Relation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HR_User" EntityType="Self.HR_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Case" EntityType="Self.T_Case" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Case_Clients" EntityType="Self.t_Case_Clients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Case_CommissionDateLog" EntityType="Self.T_Case_CommissionDateLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Case_Main" EntityType="Self.t_Case_Main" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Case_Property" EntityType="Self.t_Case_Property" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Case_StartRemit" EntityType="Self.T_Case_StartRemit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_DDL_ItemList" EntityType="Self.T_DDL_ItemList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_DelayCommForGsl" EntityType="Self.T_DelayCommForGsl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_DirectorManagerAccount" EntityType="Self.T_DirectorManagerAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_EditNum_Log" EntityType="Self.t_EditNum_Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Entrust" EntityType="Self.T_Entrust" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EntrustAccount" EntityType="Self.T_EntrustAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EntrustFlow" EntityType="Self.T_EntrustFlow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EntrustGartherPay" EntityType="Self.T_EntrustGartherPay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EntrustHoldComm" EntityType="Self.T_EntrustHoldComm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_EntrustResult" EntityType="Self.T_EntrustResult" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_Base" EntityType="Self.t_Flow_Base" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_CaseOver" EntityType="Self.t_Flow_CaseOver" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flow_CaseUnion" EntityType="Self.T_Flow_CaseUnion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flow_CaseUnionDetail" EntityType="Self.T_Flow_CaseUnionDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_Clients" EntityType="Self.t_Flow_Clients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_ClinetInfo_Log" EntityType="Self.t_Flow_ClinetInfo_Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_Commision" EntityType="Self.t_Flow_Commision" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flow_CommissionRemit" EntityType="Self.T_Flow_CommissionRemit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flow_DelayCommission" EntityType="Self.T_Flow_DelayCommission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_Distribution" EntityType="Self.t_Flow_Distribution" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_DistributionDetail" EntityType="Self.t_Flow_DistributionDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flow_DistributionDetailbak" EntityType="Self.T_Flow_DistributionDetailbak" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_GatherPay" EntityType="Self.t_Flow_GatherPay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flow_Litigation" EntityType="Self.T_Flow_Litigation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flow_Litigation_QSList" EntityType="Self.T_Flow_Litigation_QSList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_Loan" EntityType="Self.t_Flow_Loan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_LoanChange" EntityType="Self.t_Flow_LoanChange" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_Mortgage" EntityType="Self.t_Flow_Mortgage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flow_NonIncomeDetail" EntityType="Self.T_Flow_NonIncomeDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Flow_Trade" EntityType="Self.t_Flow_Trade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_innerfinance_case" EntityType="Self.t_innerfinance_case" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_innerfinance_flow" EntityType="Self.t_innerfinance_flow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Log_CommissionFollow" EntityType="Self.T_Log_CommissionFollow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Log_EditClient" EntityType="Self.t_Log_EditClient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Log_News" EntityType="Self.T_Log_News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Log_PrintCash" EntityType="Self.T_Log_PrintCash" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PrintCash_Bank" EntityType="Self.T_PrintCash_Bank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Pro_Project" EntityType="Self.T_Pro_Project" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Pro_ProjectCashRule" EntityType="Self.T_Pro_ProjectCashRule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Pro_ProjectDaili" EntityType="Self.t_Pro_ProjectDaili" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Pro_ProjectUser" EntityType="Self.T_Pro_ProjectUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_pub_user_parents" EntityType="Self.t_pub_user_parents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_pub_UserParents" EntityType="Self.T_pub_UserParents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Publish_NewsLog" EntityType="Self.T_Publish_NewsLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Receipt_Detail" EntityType="Self.t_Receipt_Detail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Receipt_Log" EntityType="Self.t_Receipt_Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Receipt_Manage" EntityType="Self.t_Receipt_Manage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_Receipt_Yellow" EntityType="Self.t_Receipt_Yellow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hr_org_bak" EntityType="Self.hr_org_bak" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [hr_org_bak].[id] AS [id], 
+    [hr_org_bak].[Org_Name] AS [Org_Name], 
+    [hr_org_bak].[Org_id] AS [Org_id], 
+    [hr_org_bak].[Org_SelfCode] AS [Org_SelfCode], 
+    [hr_org_bak].[CTM_OrgName] AS [CTM_OrgName], 
+    [hr_org_bak].[Agency_OrgId] AS [Agency_OrgId], 
+    [hr_org_bak].[K3_Guid] AS [K3_Guid], 
+    [hr_org_bak].[Confirmed] AS [Confirmed]
+    FROM [dbo].[hr_org_bak] AS [hr_org_bak]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="hr_OrgDepartment" EntityType="Self.hr_OrgDepartment" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [hr_OrgDepartment].[ID] AS [ID], 
+    [hr_OrgDepartment].[DeptCode] AS [DeptCode], 
+    [hr_OrgDepartment].[DeptName] AS [DeptName], 
+    [hr_OrgDepartment].[Addr] AS [Addr], 
+    [hr_OrgDepartment].[Lv5Name] AS [Lv5Name], 
+    [hr_OrgDepartment].[Lv5Code] AS [Lv5Code], 
+    [hr_OrgDepartment].[Lv5Position] AS [Lv5Position], 
+    [hr_OrgDepartment].[Lv6Name] AS [Lv6Name], 
+    [hr_OrgDepartment].[Lv6Code] AS [Lv6Code], 
+    [hr_OrgDepartment].[Lv6Position] AS [Lv6Position], 
+    [hr_OrgDepartment].[Lv7Name] AS [Lv7Name], 
+    [hr_OrgDepartment].[Lv7Code] AS [Lv7Code], 
+    [hr_OrgDepartment].[Lv7Position] AS [Lv7Position], 
+    [hr_OrgDepartment].[Lv8Name] AS [Lv8Name], 
+    [hr_OrgDepartment].[Lv8Code] AS [Lv8Code], 
+    [hr_OrgDepartment].[Lv8Position] AS [Lv8Position], 
+    [hr_OrgDepartment].[Lv9Name] AS [Lv9Name], 
+    [hr_OrgDepartment].[Lv9Code] AS [Lv9Code], 
+    [hr_OrgDepartment].[Lv9Position] AS [Lv9Position], 
+    [hr_OrgDepartment].[Lv10Name] AS [Lv10Name], 
+    [hr_OrgDepartment].[Lv10Code] AS [Lv10Code], 
+    [hr_OrgDepartment].[Lv10Position] AS [Lv10Position], 
+    [hr_OrgDepartment].[isNew] AS [isNew], 
+    [hr_OrgDepartment].[starttime] AS [starttime], 
+    [hr_OrgDepartment].[Endtime] AS [Endtime], 
+    [hr_OrgDepartment].[isLeave] AS [isLeave], 
+    [hr_OrgDepartment].[ischange] AS [ischange], 
+    [hr_OrgDepartment].[Year] AS [Year], 
+    [hr_OrgDepartment].[Month] AS [Month], 
+    [hr_OrgDepartment].[drecordtime] AS [drecordtime]
+    FROM [dbo].[hr_OrgDepartment] AS [hr_OrgDepartment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="hr_userOrg" EntityType="Self.hr_userOrg" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [hr_userOrg].[ID] AS [ID], 
+    [hr_userOrg].[userCode] AS [userCode], 
+    [hr_userOrg].[UserName] AS [UserName], 
+    [hr_userOrg].[Job] AS [Job], 
+    [hr_userOrg].[duty] AS [duty], 
+    [hr_userOrg].[level] AS [level], 
+    [hr_userOrg].[orgName] AS [orgName], 
+    [hr_userOrg].[OrgCode] AS [OrgCode], 
+    [hr_userOrg].[StartTime] AS [StartTime], 
+    [hr_userOrg].[EndTime] AS [EndTime], 
+    [hr_userOrg].[userSel] AS [userSel], 
+    [hr_userOrg].[isLeave] AS [isLeave], 
+    [hr_userOrg].[IsNew] AS [IsNew], 
+    [hr_userOrg].[InFlag] AS [InFlag], 
+    [hr_userOrg].[ChangeFlag] AS [ChangeFlag], 
+    [hr_userOrg].[Area] AS [Area], 
+    [hr_userOrg].[Year] AS [Year], 
+    [hr_userOrg].[month] AS [month], 
+    [hr_userOrg].[userSel2] AS [userSel2], 
+    [hr_userOrg].[dRecordTime] AS [dRecordTime]
+    FROM [dbo].[hr_userOrg] AS [hr_userOrg]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ORG_Unit" EntityType="Self.ORG_Unit" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ORG_Unit].[ID] AS [ID], 
+    [ORG_Unit].[FrameworkID] AS [FrameworkID], 
+    [ORG_Unit].[Name] AS [Name], 
+    [ORG_Unit].[Code] AS [Code], 
+    [ORG_Unit].[CategoryID] AS [CategoryID], 
+    [ORG_Unit].[CreateTime] AS [CreateTime], 
+    [ORG_Unit].[EndTime] AS [EndTime], 
+    [ORG_Unit].[StatusID] AS [StatusID], 
+    [ORG_Unit].[OrderCode] AS [OrderCode], 
+    [ORG_Unit].[SelfCode] AS [SelfCode], 
+    [ORG_Unit].[UnitLevel] AS [UnitLevel], 
+    [ORG_Unit].[FullName] AS [FullName], 
+    [ORG_Unit].[K3UnitCode] AS [K3UnitCode]
+    FROM [dbo].[ORG_Unit] AS [ORG_Unit]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ORG_Unit_20120229" EntityType="Self.ORG_Unit_20120229" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ORG_Unit_20120229].[ID] AS [ID], 
+    [ORG_Unit_20120229].[FrameworkID] AS [FrameworkID], 
+    [ORG_Unit_20120229].[Name] AS [Name], 
+    [ORG_Unit_20120229].[Code] AS [Code], 
+    [ORG_Unit_20120229].[CategoryID] AS [CategoryID], 
+    [ORG_Unit_20120229].[CreateTime] AS [CreateTime], 
+    [ORG_Unit_20120229].[EndTime] AS [EndTime], 
+    [ORG_Unit_20120229].[StatusID] AS [StatusID], 
+    [ORG_Unit_20120229].[OrderCode] AS [OrderCode], 
+    [ORG_Unit_20120229].[SelfCode] AS [SelfCode], 
+    [ORG_Unit_20120229].[UnitLevel] AS [UnitLevel], 
+    [ORG_Unit_20120229].[FullName] AS [FullName], 
+    [ORG_Unit_20120229].[K3UnitCode] AS [K3UnitCode]
+    FROM [dbo].[ORG_Unit_20120229] AS [ORG_Unit_20120229]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ORG_Unit_bak" EntityType="Self.ORG_Unit_bak" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ORG_Unit_bak].[ID] AS [ID], 
+    [ORG_Unit_bak].[FrameworkID] AS [FrameworkID], 
+    [ORG_Unit_bak].[Name] AS [Name], 
+    [ORG_Unit_bak].[Code] AS [Code], 
+    [ORG_Unit_bak].[CategoryID] AS [CategoryID], 
+    [ORG_Unit_bak].[CreateTime] AS [CreateTime], 
+    [ORG_Unit_bak].[EndTime] AS [EndTime], 
+    [ORG_Unit_bak].[StatusID] AS [StatusID], 
+    [ORG_Unit_bak].[OrderCode] AS [OrderCode], 
+    [ORG_Unit_bak].[SelfCode] AS [SelfCode], 
+    [ORG_Unit_bak].[UnitLevel] AS [UnitLevel], 
+    [ORG_Unit_bak].[FullName] AS [FullName], 
+    [ORG_Unit_bak].[K3UnitCode] AS [K3UnitCode]
+    FROM [dbo].[ORG_Unit_bak] AS [ORG_Unit_bak]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PropertyCopy" EntityType="Self.PropertyCopy" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PropertyCopy].[PropertyID] AS [PropertyID], 
+    [PropertyCopy].[CityName] AS [CityName], 
+    [PropertyCopy].[DistrictName] AS [DistrictName], 
+    [PropertyCopy].[EstateID] AS [EstateID], 
+    [PropertyCopy].[RoomNo] AS [RoomNo], 
+    [PropertyCopy].[Floor] AS [Floor], 
+    [PropertyCopy].[Trade] AS [Trade], 
+    [PropertyCopy].[Status] AS [Status], 
+    [PropertyCopy].[CountF] AS [CountF], 
+    [PropertyCopy].[CountT] AS [CountT], 
+    [PropertyCopy].[CountW] AS [CountW], 
+    [PropertyCopy].[CountY] AS [CountY], 
+    [PropertyCopy].[FlagRecommand] AS [FlagRecommand], 
+    [PropertyCopy].[PropertyUsage] AS [PropertyUsage], 
+    [PropertyCopy].[PropertyType] AS [PropertyType], 
+    [PropertyCopy].[PropertyDirection] AS [PropertyDirection], 
+    [PropertyCopy].[PropertyLook] AS [PropertyLook], 
+    [PropertyCopy].[PropertyBuy] AS [PropertyBuy], 
+    [PropertyCopy].[PropertyCommission] AS [PropertyCommission], 
+    [PropertyCopy].[PropertySource] AS [PropertySource], 
+    [PropertyCopy].[Square] AS [Square], 
+    [PropertyCopy].[PriceUnit] AS [PriceUnit], 
+    [PropertyCopy].[Price] AS [Price], 
+    [PropertyCopy].[PriceBase] AS [PriceBase], 
+    [PropertyCopy].[RentPriceUnit] AS [RentPriceUnit], 
+    [PropertyCopy].[RentPrice] AS [RentPrice], 
+    [PropertyCopy].[MgtPrice] AS [MgtPrice], 
+    [PropertyCopy].[TrustDate] AS [TrustDate], 
+    [PropertyCopy].[DeptID] AS [DeptID], 
+    [PropertyCopy].[EmpID] AS [EmpID], 
+    [PropertyCopy].[PropertyDecoration] AS [PropertyDecoration], 
+    [PropertyCopy].[PropertyFloor] AS [PropertyFloor], 
+    [PropertyCopy].[Remark] AS [Remark], 
+    [PropertyCopy].[RegPerson] AS [RegPerson], 
+    [PropertyCopy].[RegDate] AS [RegDate], 
+    [PropertyCopy].[ModPerson] AS [ModPerson], 
+    [PropertyCopy].[ModDate] AS [ModDate], 
+    [PropertyCopy].[FlagPrivate] AS [FlagPrivate], 
+    [PropertyCopy].[PropertyTrust] AS [PropertyTrust], 
+    [PropertyCopy].[KeyNo] AS [KeyNo], 
+    [PropertyCopy].[CompleteYear] AS [CompleteYear], 
+    [PropertyCopy].[CompleteMonth] AS [CompleteMonth], 
+    [PropertyCopy].[PropertyOccupy] AS [PropertyOccupy], 
+    [PropertyCopy].[PropertyOwn] AS [PropertyOwn], 
+    [PropertyCopy].[SquareUse] AS [SquareUse], 
+    [PropertyCopy].[LastFollowDate] AS [LastFollowDate], 
+    [PropertyCopy].[FlagTrashed] AS [FlagTrashed], 
+    [PropertyCopy].[FlagDeleted] AS [FlagDeleted], 
+    [PropertyCopy].[OwnerName] AS [OwnerName], 
+    [PropertyCopy].[OwnerTel] AS [OwnerTel], 
+    [PropertyCopy].[ContactName] AS [ContactName], 
+    [PropertyCopy].[PropertyFurniture] AS [PropertyFurniture], 
+    [PropertyCopy].[FlagSpecial] AS [FlagSpecial], 
+    [PropertyCopy].[PropertyNo] AS [PropertyNo], 
+    [PropertyCopy].[PriceLine] AS [PriceLine], 
+    [PropertyCopy].[RentPriceLine] AS [RentPriceLine], 
+    [PropertyCopy].[Address] AS [Address], 
+    [PropertyCopy].[PropertyCertificate] AS [PropertyCertificate], 
+    [PropertyCopy].[PropertyElectric] AS [PropertyElectric], 
+    [PropertyCopy].[ExDate] AS [ExDate], 
+    [PropertyCopy].[FloorAll] AS [FloorAll], 
+    [PropertyCopy].[HandOverDate] AS [HandOverDate], 
+    [PropertyCopy].[UnitName] AS [UnitName], 
+    [PropertyCopy].[RentUnitName] AS [RentUnitName], 
+    [PropertyCopy].[PhotoCount] AS [PhotoCount], 
+    [PropertyCopy].[CustomField1] AS [CustomField1], 
+    [PropertyCopy].[CustomField2] AS [CustomField2], 
+    [PropertyCopy].[IsTran] AS [IsTran], 
+    [PropertyCopy].[TrustNo] AS [TrustNo], 
+    [PropertyCopy].[TrustExpired] AS [TrustExpired], 
+    [PropertyCopy].[TrustRemark] AS [TrustRemark], 
+    [PropertyCopy].[TrustDeptID] AS [TrustDeptID], 
+    [PropertyCopy].[TrustEmpID] AS [TrustEmpID], 
+    [PropertyCopy].[RecommandExpired] AS [RecommandExpired], 
+    [PropertyCopy].[OwnerJob] AS [OwnerJob], 
+    [PropertyCopy].[OwnerSex] AS [OwnerSex], 
+    [PropertyCopy].[OwnerAge] AS [OwnerAge], 
+    [PropertyCopy].[OwnerIncome] AS [OwnerIncome], 
+    [PropertyCopy].[CentaDBID] AS [CentaDBID], 
+    [PropertyCopy].[CustNumeric1] AS [CustNumeric1], 
+    [PropertyCopy].[CustNumeric2] AS [CustNumeric2], 
+    [PropertyCopy].[CustNumeric3] AS [CustNumeric3], 
+    [PropertyCopy].[CustDate1] AS [CustDate1], 
+    [PropertyCopy].[CustDate2] AS [CustDate2], 
+    [PropertyCopy].[CustDate3] AS [CustDate3], 
+    [PropertyCopy].[CustString1] AS [CustString1], 
+    [PropertyCopy].[CustString2] AS [CustString2], 
+    [PropertyCopy].[CustString3] AS [CustString3], 
+    [PropertyCopy].[PropertyCardNo] AS [PropertyCardNo], 
+    [PropertyCopy].[PropertyMan] AS [PropertyMan], 
+    [PropertyCopy].[PropertyCardDate] AS [PropertyCardDate], 
+    [PropertyCopy].[FlagFiveYears] AS [FlagFiveYears], 
+    [PropertyCopy].[EmpIDRecommandAreaManager] AS [EmpIDRecommandAreaManager], 
+    [PropertyCopy].[PropertyCardAddress] AS [PropertyCardAddress], 
+    [PropertyCopy].[PropertyCardOther] AS [PropertyCardOther], 
+    [PropertyCopy].[PropertyCardType] AS [PropertyCardType], 
+    [PropertyCopy].[PropertyLevel] AS [PropertyLevel], 
+    [PropertyCopy].[FlagLookTogether] AS [FlagLookTogether], 
+    [PropertyCopy].[LookTogetherEmpID] AS [LookTogetherEmpID], 
+    [PropertyCopy].[GuidePrice] AS [GuidePrice], 
+    [PropertyCopy].[TaxPersonal] AS [TaxPersonal], 
+    [PropertyCopy].[TaxBusiness] AS [TaxBusiness], 
+    [PropertyCopy].[TaxLand] AS [TaxLand], 
+    [PropertyCopy].[TaxStampDuty] AS [TaxStampDuty], 
+    [PropertyCopy].[TaxDeed] AS [TaxDeed], 
+    [PropertyCopy].[LandTransfer] AS [LandTransfer], 
+    [PropertyCopy].[TaxOther] AS [TaxOther], 
+    [PropertyCopy].[CommissionAlloc] AS [CommissionAlloc], 
+    [PropertyCopy].[RoomTypeID] AS [RoomTypeID], 
+    [PropertyCopy].[FlagRoomList] AS [FlagRoomList], 
+    [PropertyCopy].[FlagSecond] AS [FlagSecond], 
+    [PropertyCopy].[FlagMortgage] AS [FlagMortgage], 
+    [PropertyCopy].[FlagLimited] AS [FlagLimited], 
+    [PropertyCopy].[ExpiredDateLimited] AS [ExpiredDateLimited], 
+    [PropertyCopy].[LimitedEmpID] AS [LimitedEmpID], 
+    [PropertyCopy].[FlagCarPark] AS [FlagCarPark], 
+    [PropertyCopy].[CarPos] AS [CarPos]
+    FROM [dbo].[PropertyCopy] AS [PropertyCopy]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SYSConfig" EntityType="Self.SYSConfig" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SYSConfig].[ID] AS [ID], 
+    [SYSConfig].[OrgRole] AS [OrgRole], 
+    [SYSConfig].[OrgName] AS [OrgName], 
+    [SYSConfig].[FlowType] AS [FlowType], 
+    [SYSConfig].[AttachmentUpLoad] AS [AttachmentUpLoad], 
+    [SYSConfig].[AttachmentBrower] AS [AttachmentBrower], 
+    [SYSConfig].[AttachmentList] AS [AttachmentList], 
+    [SYSConfig].[ZPriceView] AS [ZPriceView]
+    FROM [dbo].[SYSConfig] AS [SYSConfig]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_CaseClient" EntityType="Self.T_CaseClient" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [T_CaseClient].[Id] AS [Id], 
+    [T_CaseClient].[RootID] AS [RootID], 
+    [T_CaseClient].[ctm_code] AS [ctm_code], 
+    [T_CaseClient].[cust_code] AS [cust_code], 
+    [T_CaseClient].[cust_position] AS [cust_position], 
+    [T_CaseClient].[name] AS [name], 
+    [T_CaseClient].[mobile] AS [mobile], 
+    [T_CaseClient].[cert_type] AS [cert_type], 
+    [T_CaseClient].[cert_code] AS [cert_code]
+    FROM [dbo].[T_CaseClient] AS [T_CaseClient]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_EntrustFlowBK" EntityType="Self.T_EntrustFlowBK" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [T_EntrustFlowBK].[ID] AS [ID], 
+    [T_EntrustFlowBK].[Prootid] AS [Prootid], 
+    [T_EntrustFlowBK].[wfmid] AS [wfmid], 
+    [T_EntrustFlowBK].[FlowName] AS [FlowName], 
+    [T_EntrustFlowBK].[FlowID] AS [FlowID], 
+    [T_EntrustFlowBK].[TradeType] AS [TradeType], 
+    [T_EntrustFlowBK].[IsSign] AS [IsSign], 
+    [T_EntrustFlowBK].[EntrustStart] AS [EntrustStart], 
+    [T_EntrustFlowBK].[EntrustEnd] AS [EntrustEnd], 
+    [T_EntrustFlowBK].[Price1] AS [Price1], 
+    [T_EntrustFlowBK].[Price2] AS [Price2], 
+    [T_EntrustFlowBK].[CommAmount] AS [CommAmount], 
+    [T_EntrustFlowBK].[CommRate] AS [CommRate], 
+    [T_EntrustFlowBK].[EntrustDate] AS [EntrustDate], 
+    [T_EntrustFlowBK].[EntrustType] AS [EntrustType], 
+    [T_EntrustFlowBK].[IsPayOwn] AS [IsPayOwn], 
+    [T_EntrustFlowBK].[UserName] AS [UserName], 
+    [T_EntrustFlowBK].[UserID] AS [UserID], 
+    [T_EntrustFlowBK].[UserCode] AS [UserCode], 
+    [T_EntrustFlowBK].[OrgName] AS [OrgName], 
+    [T_EntrustFlowBK].[OrgID] AS [OrgID], 
+    [T_EntrustFlowBK].[ApplyUser] AS [ApplyUser], 
+    [T_EntrustFlowBK].[ApplyID] AS [ApplyID], 
+    [T_EntrustFlowBK].[ApplyCode] AS [ApplyCode], 
+    [T_EntrustFlowBK].[QDIdeaType] AS [QDIdeaType], 
+    [T_EntrustFlowBK].[QDIdea] AS [QDIdea], 
+    [T_EntrustFlowBK].[QDArea] AS [QDArea], 
+    [T_EntrustFlowBK].[QDid] AS [QDid], 
+    [T_EntrustFlowBK].[QDName] AS [QDName], 
+    [T_EntrustFlowBK].[QDCode] AS [QDCode], 
+    [T_EntrustFlowBK].[payTime] AS [payTime], 
+    [T_EntrustFlowBK].[payAmount] AS [payAmount], 
+    [T_EntrustFlowBK].[payFor] AS [payFor], 
+    [T_EntrustFlowBK].[payRemark] AS [payRemark], 
+    [T_EntrustFlowBK].[ReasonGR] AS [ReasonGR], 
+    [T_EntrustFlowBK].[ReasonGS] AS [ReasonGS], 
+    [T_EntrustFlowBK].[IsNoInterAgency] AS [IsNoInterAgency], 
+    [T_EntrustFlowBK].[CurState] AS [CurState], 
+    [T_EntrustFlowBK].[CreateTime] AS [CreateTime], 
+    [T_EntrustFlowBK].[CheckTime] AS [CheckTime], 
+    [T_EntrustFlowBK].[IsNew] AS [IsNew], 
+    [T_EntrustFlowBK].[IsWast] AS [IsWast], 
+    [T_EntrustFlowBK].[dRecordTime] AS [dRecordTime], 
+    [T_EntrustFlowBK].[CQUser] AS [CQUser], 
+    [T_EntrustFlowBK].[QSUser] AS [QSUser], 
+    [T_EntrustFlowBK].[QSContact] AS [QSContact], 
+    [T_EntrustFlowBK].[Prox] AS [Prox], 
+    [T_EntrustFlowBK].[ProxContact] AS [ProxContact], 
+    [T_EntrustFlowBK].[Remark] AS [Remark]
+    FROM [dbo].[T_EntrustFlowBK] AS [T_EntrustFlowBK]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_EntrustSpecialUser" EntityType="Self.T_EntrustSpecialUser" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [T_EntrustSpecialUser].[ID] AS [ID], 
+    [T_EntrustSpecialUser].[UserName] AS [UserName], 
+    [T_EntrustSpecialUser].[UserCode] AS [UserCode], 
+    [T_EntrustSpecialUser].[UserID] AS [UserID], 
+    [T_EntrustSpecialUser].[Bank] AS [Bank], 
+    [T_EntrustSpecialUser].[CardNo] AS [CardNo], 
+    [T_EntrustSpecialUser].[UserType] AS [UserType], 
+    [T_EntrustSpecialUser].[IsWaster] AS [IsWaster], 
+    [T_EntrustSpecialUser].[CardAccount] AS [CardAccount]
+    FROM [dbo].[T_EntrustSpecialUser] AS [T_EntrustSpecialUser]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_EntrustUser" EntityType="Self.T_EntrustUser" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [T_EntrustUser].[ID] AS [ID], 
+    [T_EntrustUser].[Prootid] AS [Prootid], 
+    [T_EntrustUser].[wfmid] AS [wfmid], 
+    [T_EntrustUser].[UserName] AS [UserName], 
+    [T_EntrustUser].[UserID] AS [UserID], 
+    [T_EntrustUser].[UserCode] AS [UserCode], 
+    [T_EntrustUser].[OrgName] AS [OrgName], 
+    [T_EntrustUser].[OrgID] AS [OrgID], 
+    [T_EntrustUser].[UserType] AS [UserType], 
+    [T_EntrustUser].[Amount] AS [Amount], 
+    [T_EntrustUser].[UserParent] AS [UserParent], 
+    [T_EntrustUser].[UserRole] AS [UserRole], 
+    [T_EntrustUser].[IsLeave] AS [IsLeave], 
+    [T_EntrustUser].[CreateTime] AS [CreateTime], 
+    [T_EntrustUser].[CheckTime] AS [CheckTime], 
+    [T_EntrustUser].[dRecordTime] AS [dRecordTime], 
+    [T_EntrustUser].[Rank] AS [Rank]
+    FROM [dbo].[T_EntrustUser] AS [T_EntrustUser]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="t_Flow_DistributionCMS" EntityType="Self.t_Flow_DistributionCMS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [t_Flow_DistributionCMS].[DistributionId] AS [DistributionId], 
+    [t_Flow_DistributionCMS].[RootId] AS [RootId], 
+    [t_Flow_DistributionCMS].[WfmId] AS [WfmId], 
+    [t_Flow_DistributionCMS].[OrgName] AS [OrgName], 
+    [t_Flow_DistributionCMS].[OrgId] AS [OrgId], 
+    [t_Flow_DistributionCMS].[UserName] AS [UserName], 
+    [t_Flow_DistributionCMS].[SerialNum] AS [SerialNum], 
+    [t_Flow_DistributionCMS].[UserId] AS [UserId], 
+    [t_Flow_DistributionCMS].[Percent] AS [Percent], 
+    [t_Flow_DistributionCMS].[Num] AS [Num], 
+    [t_Flow_DistributionCMS].[Achive] AS [Achive], 
+    [t_Flow_DistributionCMS].[Comm] AS [Comm], 
+    [t_Flow_DistributionCMS].[StartTime] AS [StartTime], 
+    [t_Flow_DistributionCMS].[EndTime] AS [EndTime], 
+    [t_Flow_DistributionCMS].[StateFlag] AS [StateFlag], 
+    [t_Flow_DistributionCMS].[recording_time] AS [recording_time], 
+    [t_Flow_DistributionCMS].[updated_time] AS [updated_time], 
+    [t_Flow_DistributionCMS].[AgencyType] AS [AgencyType], 
+    [t_Flow_DistributionCMS].[AgencyRole] AS [AgencyRole], 
+    [t_Flow_DistributionCMS].[CommPercent] AS [CommPercent]
+    FROM [dbo].[t_Flow_DistributionCMS] AS [t_Flow_DistributionCMS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TWF_TCB_Property" EntityType="Self.TWF_TCB_Property" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TWF_TCB_Property].[WFM_ID] AS [WFM_ID], 
+    [TWF_TCB_Property].[Case_WFM_ID] AS [Case_WFM_ID], 
+    [TWF_TCB_Property].[PropertyID] AS [PropertyID], 
+    [TWF_TCB_Property].[EstateID] AS [EstateID], 
+    [TWF_TCB_Property].[DISP_ID] AS [DISP_ID], 
+    [TWF_TCB_Property].[CityName] AS [CityName], 
+    [TWF_TCB_Property].[DistrictName] AS [DistrictName], 
+    [TWF_TCB_Property].[AreaName] AS [AreaName], 
+    [TWF_TCB_Property].[EstateName] AS [EstateName], 
+    [TWF_TCB_Property].[Address] AS [Address], 
+    [TWF_TCB_Property].[RoomNo] AS [RoomNo], 
+    [TWF_TCB_Property].[Spell] AS [Spell], 
+    [TWF_TCB_Property].[ProAddr] AS [ProAddr], 
+    [TWF_TCB_Property].[Case_Estate] AS [Case_Estate], 
+    [TWF_TCB_Property].[Case_Owner] AS [Case_Owner], 
+    [TWF_TCB_Property].[Case_OwnerName] AS [Case_OwnerName], 
+    [TWF_TCB_Property].[BizUser_ID] AS [BizUser_ID], 
+    [TWF_TCB_Property].[BizUser_Name] AS [BizUser_Name], 
+    [TWF_TCB_Property].[BizOrg_ID] AS [BizOrg_ID], 
+    [TWF_TCB_Property].[BizOrg_Name] AS [BizOrg_Name], 
+    [TWF_TCB_Property].[Intent_Date] AS [Intent_Date], 
+    [TWF_TCB_Property].[Earnest_Date] AS [Earnest_Date], 
+    [TWF_TCB_Property].[Signup_Date] AS [Signup_Date], 
+    [TWF_TCB_Property].[Change_Date] AS [Change_Date], 
+    [TWF_TCB_Property].[Blowdown_Date] AS [Blowdown_Date], 
+    [TWF_TCB_Property].[EndCase_Date] AS [EndCase_Date], 
+    [TWF_TCB_Property].[dRecordCreationDate] AS [dRecordCreationDate], 
+    [TWF_TCB_Property].[sRecordCreator] AS [sRecordCreator], 
+    [TWF_TCB_Property].[sRecordVersion] AS [sRecordVersion]
+    FROM [dbo].[TWF_TCB_Property] AS [TWF_TCB_Property]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="HR_Base_HR_Relation_FK1" Association="Self.HR_Base_HR_Relation_FK1">
+      <End Role="HR_Base" EntitySet="HR_Base" />
+      <End Role="HR_Relation" EntitySet="HR_Relation" />
+    </AssociationSet>
+    <AssociationSet Name="HR_Department_HR_Relation_FK1" Association="Self.HR_Department_HR_Relation_FK1">
+      <End Role="HR_Department" EntitySet="HR_Department" />
+      <End Role="HR_Relation" EntitySet="HR_Relation" />
+    </AssociationSet>
+    <AssociationSet Name="t_Case_Main_t_Case_Property_FK1" Association="Self.t_Case_Main_t_Case_Property_FK1">
+      <End Role="t_Case_Main" EntitySet="t_Case_Main" />
+      <End Role="t_Case_Property" EntitySet="t_Case_Property" />
+    </AssociationSet>
+    <AssociationSet Name="T_Flow_CaseUnion_T_Flow_CaseUnionDetail_FK1" Association="Self.T_Flow_CaseUnion_T_Flow_CaseUnionDetail_FK1">
+      <End Role="T_Flow_CaseUnion" EntitySet="T_Flow_CaseUnion" />
+      <End Role="T_Flow_CaseUnionDetail" EntitySet="T_Flow_CaseUnionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="t_innerfinance_case_t_innerfinance_flow_FK1" Association="Self.t_innerfinance_case_t_innerfinance_flow_FK1">
+      <End Role="t_innerfinance_case" EntitySet="t_innerfinance_case" />
+      <End Role="t_innerfinance_flow" EntitySet="t_innerfinance_flow" />
+    </AssociationSet>
+    <AssociationSet Name="t_Receipt_Manage_t_Receipt_Detail_FK1" Association="Self.t_Receipt_Manage_t_Receipt_Detail_FK1">
+      <End Role="t_Receipt_Manage" EntitySet="t_Receipt_Manage" />
+      <End Role="t_Receipt_Detail" EntitySet="t_Receipt_Detail" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

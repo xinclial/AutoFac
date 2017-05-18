@@ -4,21 +4,23 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using FB.CMS.IService;
+using FB.CMS.Service.Service;
+using FB.CMS.IService.IService;
 
 namespace FB.CMS.MvcSite.Controllers
 {
     
     public class HomeController : Controller
     {
-        IsysFunctionServices dal;
-        public HomeController(IsysFunctionServices dal) //依赖构造函数进行对象注入  
+        I_t_Case_Main_Service dal;
+        public HomeController(I_t_Case_Main_Service dal) //依赖构造函数进行对象注入  
         {
             this.dal = dal; //在构造函数中初始化HomeController控制器类的dal属性 （这个dal属性的类型是IsysFunctionServices）  
         }
 
         public ActionResult Index()
         {
-            var a = dal.QueryWhere(r => r.fID > 20).ToList(); //查询  
+            var a = dal.GetIQueryable().Take(100).ToList();
             return View();
         }
     }

@@ -291,6 +291,14 @@
       <Project>{5c95bf5d-c1e7-4cfd-bbbd-7fa90d180dfe}</Project>
       <Name>FB.CMS.IService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FB.CMS.Model\FB.CMS.Model.csproj">
+      <Project>{aed6b498-7fe9-439b-b744-bad902b2f330}</Project>
+      <Name>FB.CMS.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FB.CMS.Service\FB.CMS.Service.csproj">
+      <Project>{737d302b-636d-4367-9710-7b0daa060793}</Project>
+      <Name>FB.CMS.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
