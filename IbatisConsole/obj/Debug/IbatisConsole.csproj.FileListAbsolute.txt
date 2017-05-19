@@ -16,6 +16,11 @@ E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Model.pdb
 E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\IBatisNet.Common.xml
 E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\IBatisNet.DataMapper.xml
 E:\我的项目\FB.CMS\IbatisConsole\obj\Debug\IbatisConsole.csprojResolveAssemblyReference.cache
-E:\我的项目\FB.CMS\IbatisConsole\obj\Debug\IbatisConsole.csproj.IbatisConsole.exe.config
 E:\我的项目\FB.CMS\IbatisConsole\obj\Debug\IbatisConsole.exe
 E:\我的项目\FB.CMS\IbatisConsole\obj\Debug\IbatisConsole.pdb
+E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Autofac.Extras.DynamicProxy.dll
+E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Castle.Core.dll
+E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Autofac.dll
+E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Autofac.Extras.DynamicProxy.xml
+E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Castle.Core.xml
+E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Autofac.xml

@@ -1,4 +1,6 @@
-﻿using Model;
+﻿using Autofac.Extras.DynamicProxy;
+using Dao.IBatisConfig;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dao.IDao
 {
+    [Intercept(typeof(TestInterceptor))]
     public interface IUserDao
     {
         /// <summary>

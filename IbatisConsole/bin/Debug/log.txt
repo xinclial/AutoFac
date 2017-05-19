@@ -15,4 +15,16 @@
 2017-05-18 17:35:38,215 [8828] DEBUG IBatisNet.DataMapper.Commands.DefaultPreparedCommand [(null)] - Statement Id: [Dao.Mappers.ContentMapper.QueryAllUser] PreparedStatement : [select *  FROM dbo.HR_User]
 2017-05-18 17:35:38,256 [8828] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Open Connection "20876819" to "Microsoft SQL Server, provider V2.0.0.0 in framework .NET V2.0".
 2017-05-18 17:35:38,312 [8828] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Close Connection "20876819" to "Microsoft SQL Server, provider V2.0.0.0 in framework .NET V2.0".
+[Footer]\r\n[Header]\r\n2017-05-19 13:55:46,434 [24572] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+2017-05-19 13:55:46,711 [24572] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [ContentMapper.xml] to list of watched files.
+2017-05-19 13:55:46,752 [24572] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [Dao.Mappers.ContentMapper.QueryAllUser] Prepared SQL: [select *  FROM dbo.HR_User]
+2017-05-19 13:55:46,766 [24572] DEBUG IBatisNet.DataMapper.Commands.DefaultPreparedCommand [(null)] - Statement Id: [Dao.Mappers.ContentMapper.QueryAllUser] PreparedStatement : [select *  FROM dbo.HR_User]
+2017-05-19 13:55:46,840 [24572] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Open Connection "20876819" to "Microsoft SQL Server, provider V2.0.0.0 in framework .NET V2.0".
+2017-05-19 13:55:46,926 [24572] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Close Connection "20876819" to "Microsoft SQL Server, provider V2.0.0.0 in framework .NET V2.0".
+[Header]\r\n2017-05-19 14:43:14,328 [25368] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+2017-05-19 14:43:14,413 [25368] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [ContentMapper.xml] to list of watched files.
+2017-05-19 14:43:14,440 [25368] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [Dao.Mappers.ContentMapper.QueryAllUser] Prepared SQL: [select *  FROM dbo.HR_User]
+2017-05-19 14:43:14,449 [25368] DEBUG IBatisNet.DataMapper.Commands.DefaultPreparedCommand [(null)] - Statement Id: [Dao.Mappers.ContentMapper.QueryAllUser] PreparedStatement : [select *  FROM dbo.HR_User]
+2017-05-19 14:43:14,486 [25368] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Open Connection "13742435" to "Microsoft SQL Server, provider V2.0.0.0 in framework .NET V2.0".
+2017-05-19 14:43:14,546 [25368] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Close Connection "13742435" to "Microsoft SQL Server, provider V2.0.0.0 in framework .NET V2.0".
 [Footer]\r\n

@@ -2,3 +2,4 @@ E:\我的项目\FB.CMS\Core\bin\Debug\Core.dll
 E:\我的项目\FB.CMS\Core\bin\Debug\Core.pdb
 E:\我的项目\FB.CMS\Core\obj\Debug\Core.dll
 E:\我的项目\FB.CMS\Core\obj\Debug\Core.pdb
+E:\我的项目\FB.CMS\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache

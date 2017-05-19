@@ -1,4 +1,6 @@
-﻿using Dao.Dao;
+﻿using Autofac;
+using Dao.Dao;
+using Dao.IBatisConfig;
 using Dao.IDao;
 using System;
 using System.Collections.Generic;
@@ -12,7 +14,17 @@ namespace IbatisConsole
     {
         static void Main(string[] args)
         {
-            IUserDao user = new UserDao();
+            //IUserDao user = new UserDao();
+
+            ContainerBuilder builder = new Autofac.ContainerBuilder();
+
+            builder.RegisterType<UserDao>().As<IUserDao>();
+
+            builder.RegisterType<TestInterceptor>();
+            
+            IContainer Container = builder.Build();
+
+            IUserDao user = Container.Resolve<IUserDao>();
 
             var list = user.GetUsers();
 
