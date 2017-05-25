@@ -11,15 +11,9 @@ namespace Dao.IBatisConfig
     {
         public void Intercept(IInvocation invocation)
         {
-            string c = string.Format("Calling method {0} with parameters {1}... ",
-             invocation.Method.Name,
-             string.Join(", ", invocation.Arguments.Select(a => (a ?? "").ToString()).ToArray()));
-
             invocation.Proceed();
-
-            string b = string.Format("Done: result was {0}.", invocation.ReturnValue);
-
-
+            if (invocation.Method.Name == "GetI")
+                invocation.ReturnValue = 1 + (int)invocation.ReturnValue;
         }
     }
 }

@@ -20,7 +20,7 @@ namespace IbatisConsole
 
             builder.RegisterType<UserDao>().As<IUserDao>();
 
-            builder.RegisterType<TestInterceptor>();
+            //builder.RegisterType<TestInterceptor>();
             
             IContainer Container = builder.Build();
 

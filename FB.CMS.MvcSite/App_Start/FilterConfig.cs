@@ -9,5 +9,24 @@ namespace FB.CMS.MvcSite
         {
             filters.Add(new HandleErrorAttribute());
         }
+        
     }
+
+    public class LoginFilter : ActionFilterAttribute
+    {
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            var cookies = HttpContext.Current.Request.Cookies["__ppa__"];
+
+            if (cookies != null)
+            {
+                //登录
+            }
+            else
+            {
+                //跳转到登录页面
+            }
+        }
+    }
+
 }
