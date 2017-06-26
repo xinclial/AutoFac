@@ -14,7 +14,7 @@ namespace IbatisConsole
     {
         static void Main(string[] args)
         {
-            //IUserDao user = new UserDao();
+            //IUserDao user = new UserDao();lll
 
             ContainerBuilder builder = new Autofac.ContainerBuilder();
 

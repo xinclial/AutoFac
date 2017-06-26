@@ -24,3 +24,6 @@ E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Autofac.dll
 E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Autofac.Extras.DynamicProxy.xml
 E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Castle.Core.xml
 E:\我的项目\FB.CMS\IbatisConsole\bin\Debug\Autofac.xml
+E:\我的项目\AutoFac\AutoFac\IbatisConsole\bin\Debug\IbatisConsole.exe.config
+E:\我的项目\AutoFac\AutoFac\IbatisConsole\obj\Debug\IbatisConsole.exe
+E:\我的项目\AutoFac\AutoFac\IbatisConsole\obj\Debug\IbatisConsole.pdb
