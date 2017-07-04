@@ -44,7 +44,7 @@ namespace Dao.Dao
 
         public List<HR_User> GetUsers()
         {
-            var list = Mapper.GetMaper..QueryForList<HR_User>("Dao.Mappers.ContentMapper.QueryAllUser", null) as List<HR_User>;
+            var list = Mapper.GetMaper.QueryForList<HR_User>("Dao.Mappers.ContentMapper.QueryAllUser", null) as List<HR_User>;
             return list;
         }
     }

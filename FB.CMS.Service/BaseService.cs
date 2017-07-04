@@ -12,28 +12,29 @@ namespace FB.CMS.Service
     public abstract class BaseService<TEntity> : IBaseService<TEntity> where TEntity : class
     {
         public IBaseRepository<TEntity> Repository = new BaseRepository<TEntity>();
-        public IList<IDisposable> DisposableObjects { get; private set; }
-        public BaseService()
-        {
-            this.DisposableObjects = new List<IDisposable>();
-        }
-        protected void AddDisposableObject(object obj)
-        {
-            IDisposable disposable = obj as IDisposable;
-            if (null != disposable)
-            {
-                this.DisposableObjects.Add(disposable);
-            }
-        }
+        //public IList<IDisposable> DisposableObjects { get; private set; }
+        //public BaseService()
+        //{
+        //    this.DisposableObjects = new List<IDisposable>();
+        //}
+        //protected void AddDisposableObject(object obj)
+        //{
+        //    IDisposable disposable = obj as IDisposable;
+        //    if (null != disposable)
+        //    {
+        //        this.DisposableObjects.Add(disposable);
+        //    }
+        //}
         public void Dispose()
         {
-            foreach (IDisposable obj in this.DisposableObjects)
-            {
-                if (null != obj)
-                {
-                    obj.Dispose();
-                }
-            }
+            this.Repository.Dispose();
+            //foreach (IDisposable obj in this.DisposableObjects)
+            //{
+            //    if (null != obj)
+            //    {
+            //        obj.Dispose();
+            //    }
+            //}
         }
         public TEntity GetEntity(System.Linq.Expressions.Expression<Func<TEntity, bool>> filter)
         {

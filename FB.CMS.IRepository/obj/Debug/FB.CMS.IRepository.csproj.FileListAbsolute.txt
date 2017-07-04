@@ -8,3 +8,13 @@ E:\我的项目\FB.CMS\FB.CMS.IRepository\bin\Debug\zh-Hans\EntityFramework.reso
 E:\我的项目\FB.CMS\FB.CMS.IRepository\obj\Debug\FB.CMS.IRepository.csprojResolveAssemblyReference.cache
 E:\我的项目\FB.CMS\FB.CMS.IRepository\obj\Debug\FB.CMS.IRepository.dll
 E:\我的项目\FB.CMS\FB.CMS.IRepository\obj\Debug\FB.CMS.IRepository.pdb
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\bin\Debug\FB.CMS.IRepository.dll
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\bin\Debug\FB.CMS.IRepository.pdb
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\bin\Debug\FB.CMS.Model.dll
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\bin\Debug\EntityFramework.dll
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\bin\Debug\FB.CMS.Model.pdb
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\bin\Debug\EntityFramework.xml
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\obj\Debug\FB.CMS.IRepository.csprojResolveAssemblyReference.cache
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\obj\Debug\FB.CMS.IRepository.dll
+E:\我的项目\AutoFac\AutoFac\FB.CMS.IRepository\obj\Debug\FB.CMS.IRepository.pdb

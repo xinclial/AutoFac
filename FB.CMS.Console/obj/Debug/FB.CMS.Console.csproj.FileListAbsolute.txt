@@ -6,3 +6,10 @@ E:\我的项目\FB.CMS\FB.CMS.Console\bin\Debug\Autofac.xml
 E:\我的项目\FB.CMS\FB.CMS.Console\obj\Debug\FB.CMS.Console.csprojResolveAssemblyReference.cache
 E:\我的项目\FB.CMS\FB.CMS.Console\obj\Debug\FB.CMS.Console.exe
 E:\我的项目\FB.CMS\FB.CMS.Console\obj\Debug\FB.CMS.Console.pdb
+E:\我的项目\AutoFac\AutoFac\FB.CMS.Console\bin\Debug\FB.CMS.Console.exe.config
+E:\我的项目\AutoFac\AutoFac\FB.CMS.Console\bin\Debug\FB.CMS.Console.exe
+E:\我的项目\AutoFac\AutoFac\FB.CMS.Console\bin\Debug\FB.CMS.Console.pdb
+E:\我的项目\AutoFac\AutoFac\FB.CMS.Console\bin\Debug\Autofac.dll
+E:\我的项目\AutoFac\AutoFac\FB.CMS.Console\bin\Debug\Autofac.xml
+E:\我的项目\AutoFac\AutoFac\FB.CMS.Console\obj\Debug\FB.CMS.Console.exe
+E:\我的项目\AutoFac\AutoFac\FB.CMS.Console\obj\Debug\FB.CMS.Console.pdb

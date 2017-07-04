@@ -16,7 +16,7 @@ namespace FB.CMS.Repository
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
-        protected DataModelContext DbContext = new DataModelContext();
+        protected DbContext DbContext = DbContextFactory.Create(); //new DataModelContext();
         protected SqlConnection sqlconnection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["SqlServerString"].ConnectionString);
 
         public DbSet<TEntity> DbSet { get; private set; }

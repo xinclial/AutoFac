@@ -2,3 +2,7 @@ E:\我的项目\FB.CMS\Model\bin\Debug\Model.dll
 E:\我的项目\FB.CMS\Model\bin\Debug\Model.pdb
 E:\我的项目\FB.CMS\Model\obj\Debug\Model.dll
 E:\我的项目\FB.CMS\Model\obj\Debug\Model.pdb
+E:\我的项目\AutoFac\AutoFac\Model\bin\Debug\Model.dll
+E:\我的项目\AutoFac\AutoFac\Model\bin\Debug\Model.pdb
+E:\我的项目\AutoFac\AutoFac\Model\obj\Debug\Model.dll
+E:\我的项目\AutoFac\AutoFac\Model\obj\Debug\Model.pdb

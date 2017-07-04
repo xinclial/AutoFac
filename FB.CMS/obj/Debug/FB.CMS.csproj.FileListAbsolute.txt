@@ -3,3 +3,7 @@ E:\我的项目\FB.CMS\FB.CMS\bin\Debug\FB.CMS.pdb
 E:\我的项目\FB.CMS\FB.CMS\obj\Debug\FB.CMS.dll
 E:\我的项目\FB.CMS\FB.CMS\obj\Debug\FB.CMS.pdb
 E:\我的项目\FB.CMS\FB.CMS\obj\Debug\FB.CMS.csprojResolveAssemblyReference.cache
+E:\我的项目\AutoFac\AutoFac\FB.CMS\bin\Debug\FB.CMS.dll
+E:\我的项目\AutoFac\AutoFac\FB.CMS\bin\Debug\FB.CMS.pdb
+E:\我的项目\AutoFac\AutoFac\FB.CMS\obj\Debug\FB.CMS.dll
+E:\我的项目\AutoFac\AutoFac\FB.CMS\obj\Debug\FB.CMS.pdb
